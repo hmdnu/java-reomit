@@ -1,5 +1,9 @@
-import React from "react";
+import { Nav } from "@/components";
 
 export default function Home() {
-  return <div>Page</div>;
+  return (
+    <main>
+      <Nav />
+    </main>
+  );
 }
