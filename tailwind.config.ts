@@ -8,7 +8,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {},
+      backgroundImage: {
+        carousel1: "url('./public/images/carousel1.png')",
+        carousel2: "url('./public/images/carousel2.png')",
+        carousel3: "url('./public/images/carousel3.png')",
+      },
       fontSize: {
         h1: "40px",
         h2: "32px",
