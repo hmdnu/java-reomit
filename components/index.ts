@@ -1,4 +1,4 @@
 import Nav from "./Nav";
-import CarouselHome from "./CarouselHome";
+import CarouselHomepage from "./CarouselHomepage";
 
-export { Nav, CarouselHome };
+export { Nav, CarouselHomepage };
