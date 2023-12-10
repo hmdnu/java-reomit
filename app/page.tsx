@@ -1,9 +1,10 @@
-import { Nav } from "@/components";
+import { CarouselHome } from "@/components";
+import { Carousel } from "flowbite-react";
 
 export default function Home() {
   return (
-    <main>
-      <Nav />
+    <main className="">
+      <CarouselHome />
     </main>
   );
 }
