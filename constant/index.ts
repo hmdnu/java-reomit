@@ -1,4 +1,4 @@
-import { CarouselHome } from "@/types";
+import { CarouselHome, Stats } from "@/types";
 
 export const navLinks = [
   {
@@ -34,7 +34,7 @@ export const carouselHome: CarouselHome[] = [
   },
 ];
 
-export const stats = [
+export const stats: Stats[] = [
   { heading: "80+", sub: "Situs Budaya" },
   { heading: "80+", sub: "Situs Budaya" },
   { heading: "80+", sub: "Situs Budaya" },

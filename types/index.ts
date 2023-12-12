@@ -3,3 +3,8 @@ export interface CarouselHome {
   heading: string;
   paragraph: string;
 }
+
+export interface Stats {
+  heading: string;
+  sub: string;
+}
