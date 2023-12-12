@@ -4,7 +4,7 @@ import "react-multi-carousel/lib/styles.css";
 import { carouselHome } from "@/constant";
 
 export default function CarouselHome() {
-  const responsive: any = {
+  const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
@@ -36,7 +36,7 @@ export default function CarouselHome() {
       >
         {carouselHome.map((carousel, i) => (
           <>
-            <div className={`bg-${carousel.carousel} bg-cover w-full h-screen flex items-center`}>
+            <div key={i} className={`bg-${carousel.carousel} bg-cover w-full h-screen flex items-center`}>
               <div className="w-[80%] m-auto">
                 <div className="w-[55%]">
                   <h1 className="text-h2 font-bold mb-5">{carousel.heading}</h1>
