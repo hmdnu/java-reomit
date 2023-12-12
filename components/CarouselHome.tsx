@@ -35,7 +35,7 @@ export default function CarouselHome() {
         draggable={false}
       >
         {carouselHome.map((carousel, i) => (
-          <div key={i} className={`bg-${carousel.carousel} bg-cover w-full h-screen flex items-center`}>
+          <div key={i} className={`bg-${carousel.name} bg-cover w-full h-screen flex items-center`}>
             <div className="w-[80%] m-auto">
               <div className="w-[55%]">
                 <h1 className="text-h2 font-bold mb-5">{carousel.heading}</h1>

@@ -21,15 +21,21 @@ export const navLinks = [
 
 export const carouselHome: CarouselHome[] = [
   {
-    carousel: "carousel1",
+    name: "carousel1",
     heading: "Ini Heading Tolong Jangan Hujat Saya Karena Tulisan “Saksikan” yang Sebelumnya",
     paragraph:
       "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
   },
   {
-    carousel: "carousel2",
+    name: "carousel2",
     heading: "Ini Heading Tolong Jangan Hujat Saya Karena Tulisan “Saksikan” yang Sebelumnya",
     paragraph:
       "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
   },
+];
+
+export const stats = [
+  { heading: "80+", sub: "Situs Budaya" },
+  { heading: "80+", sub: "Situs Budaya" },
+  { heading: "80+", sub: "Situs Budaya" },
 ];

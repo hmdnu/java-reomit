@@ -1,5 +1,5 @@
 export interface CarouselHome {
-  carousel: string;
+  name: string;
   heading: string;
   paragraph: string;
 }
