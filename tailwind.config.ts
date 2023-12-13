@@ -17,6 +17,7 @@ const config: Config = {
         carousel1: "url('/images/carousel1.png')",
         carousel2: "url('/images/carousel2.png')",
         carousel3: "url('/images/carousel3.png')",
+        quoteImg: "url('/images/quoteImg.png')",
       },
       fontSize: {
         h1: ["40px", { lineHeight: "120%" }],

@@ -65,3 +65,62 @@ export const articleContents: ArticleContentProps[] = [
     imgAlt: "karapan-sapi",
   },
 ];
+
+export const categoryHome = [
+  {
+    img: "",
+    heading: "Ragam Kesenian",
+  },
+  {
+    img: "",
+    heading: "Pertunjukkan Seni",
+  },
+  {
+    img: "",
+    heading: "Kuliner Otentik",
+  },
+];
+
+export const articleCardHome = [
+  {
+    title: "Sejarah Reog Ponorogo di Jatim",
+    creator: "John Doe",
+    dateCreated: "Agustus 2023",
+    tag: ["Kesenian"],
+  },
+
+  {
+    title: "Sejarah Reog Ponorogo di Jatim",
+    creator: "John Doe",
+    dateCreated: "Agustus 2023",
+    tag: ["Kesenian"],
+  },
+
+  {
+    title: "Sejarah Reog Ponorogo di Jatim",
+    creator: "John Doe",
+    dateCreated: "Agustus 2023",
+    tag: ["Kesenian"],
+  },
+
+  {
+    title: "Sejarah Reog Ponorogo di Jatim",
+    creator: "John Doe",
+    dateCreated: "Agustus 2023",
+    tag: ["Kesenian"],
+  },
+
+  {
+    title: "Sejarah Reog Ponorogo di Jatim",
+    creator: "John Doe",
+    dateCreated: "Agustus 2023",
+    tag: ["Kesenian"],
+  },
+
+  {
+    title: "Sejarah Reog Ponorogo di Jatim",
+    creator: "John Doe",
+    dateCreated: "Agustus 2023",
+    tag: ["Kesenian"],
+  },
+];
