@@ -1,4 +1,4 @@
-import { CarouselHome, ArticleContentProps } from "@/types";
+import { CarouselHome, Stats, ArticleContentProps } from "@/types";
 import { profile, carousel2 } from "@/public";
 
 export const navLinks = [
@@ -22,17 +22,23 @@ export const navLinks = [
 
 export const carouselHome: CarouselHome[] = [
   {
-    carousel: "bg-carousel1",
+    name: "bg-carousel1",
     heading: "Ini Heading Tolong Jangan Hujat Saya Karena Tulisan “Saksikan” yang Sebelumnya",
     paragraph:
       "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
   },
   {
-    carousel: "bg-carousel2",
+    name: "bg-carousel2",
     heading: "Ini Heading Tolong Jangan Hujat Saya Karena Tulisan “Saksikan” yang Sebelumnya",
     paragraph:
       "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
   },
+];
+
+export const stats: Stats[] = [
+  { heading: "80+", sub: "Situs Budaya" },
+  { heading: "80+", sub: "Situs Budaya" },
+  { heading: "80+", sub: "Situs Budaya" },
 ];
 
 export const articleContents: ArticleContentProps[] = [

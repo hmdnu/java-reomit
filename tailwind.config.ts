@@ -35,6 +35,7 @@ const config: Config = {
       fontSecondary: "#969696",
       themePrimary: "#2B3467",
       themeSecondary: "#BAD7E9",
+      themeGray: "#323232",
       themeRed: "#CA4459",
     },
   },

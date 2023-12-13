@@ -1,7 +1,7 @@
 import { StaticImageData } from "next/image";
 
 export interface CarouselHome {
-  carousel: string;
+  name: string;
   heading: string;
   paragraph: string;
 }
@@ -15,4 +15,9 @@ export interface ArticleContentProps {
   content: string;
   img: StaticImageData;
   imgAlt: string;
+}
+
+export interface Stats {
+  heading: string;
+  sub: string;
 }
