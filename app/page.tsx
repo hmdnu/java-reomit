@@ -1,4 +1,4 @@
-import { CarouselHome } from "@/components";
+import { CarouselHome, CategoryCulture } from "@/components";
 import { stats } from "@/constant";
 
 export default function Home() {
@@ -19,7 +19,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section></section>
+      {/* category */}
+      <CategoryCulture />
     </main>
   );
 }

@@ -65,3 +65,18 @@ export const articleContents: ArticleContentProps[] = [
     imgAlt: "karapan-sapi",
   },
 ];
+
+export const categoryHome = [
+  {
+    img: "",
+    heading: "Ragam Kesenian",
+  },
+  {
+    img: "",
+    heading: "Pertunjukkan Seni",
+  },
+  {
+    img: "",
+    heading: "Kuliner Otentik",
+  },
+];
