@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export default function Nav() {
   return (
-    <nav className="w-[95%] px-[39px] py-[35px] fixed top-0 left-0 z-50">
-      <div className="flex justify-between items-center text-black">
+    <nav className="w-full py-[30px] fixed top-0 left-0 z-50 ">
+      <div className="m-auto w-[90%] flex justify-between items-center text-fontPrimary">
         <h1 className="text-h3 font-semibold">Java Reomit.</h1>
         <div className="flex gap-[30px]">
           {navLinks.map((link, i) => (

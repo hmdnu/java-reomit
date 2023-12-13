@@ -10,20 +10,23 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        poppins: ["var(--font-montserrat)"],
+      },
       backgroundImage: {
         carousel1: "url('/images/carousel1.png')",
         carousel2: "url('/images/carousel2.png')",
         carousel3: "url('/images/carousel3.png')",
       },
       fontSize: {
-        h1: "40px",
-        h2: "32px",
-        h3: "24px",
-        h4: "20px",
-        h5: "16px",
-        h6: "14px",
-        h7: "12px",
-        h8: "10px",
+        h1: ["40px", { lineHeight: "120%" }],
+        h2: ["32px", { lineHeight: "150%" }],
+        h3: ["24px", { lineHeight: "120%" }],
+        h4: ["20px", { lineHeight: "120%" }],
+        h5: ["16px", { lineHeight: "150%" }],
+        h6: ["14px", { lineHeight: "150%" }],
+        h7: ["12px", { lineHeight: "150%" }],
+        h8: ["10px", { lineHeight: "120%" }],
       },
     },
     colors: {
