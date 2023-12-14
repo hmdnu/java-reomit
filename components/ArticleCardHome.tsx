@@ -24,6 +24,7 @@ export default function ArticleCardHome() {
                   <h2>{article.creator}</h2> <div className="bg-fontSecondary w-[6px] h-[6px] rounded-full"></div>
                   <h1>{article.dateCreated}</h1>
                 </div>
+
                 <h1 className="font-medium text-h5 text-themeRed">
                   {article.tag.map((tag, i) => (
                     <p key={i}>{tag}</p>

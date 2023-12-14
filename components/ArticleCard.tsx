@@ -7,7 +7,7 @@ export default function ArticleCard({ articleContent }: { articleContent: Articl
     <div className="grid gap-5 border-t-2">
       <Link href={{ pathname: "/article/detail", query: { name: articleContent.title } }}>
         <div className="flex gap-3 mt-8">
-          <Image src={articleContent.imgAuthor} width={40} height={40} alt="profile"></Image>
+          <Image src={articleContent.imgAuthor} width={40} height={40} alt="profile" />
           <div>
             <div className="flex gap-1">
               <h3 className="text-h6 font-semibold">{articleContent.author}</h3>
@@ -28,7 +28,7 @@ export default function ArticleCard({ articleContent }: { articleContent: Articl
             </Link>
           </div>
           <div>
-            <Image src={articleContent.img} alt={articleContent.imgAlt} width={700} className="rounded-lg"></Image>
+            <Image src={articleContent.img} alt={articleContent.imgAlt} width={700} className="rounded-lg" />
           </div>
         </div>
       </Link>
