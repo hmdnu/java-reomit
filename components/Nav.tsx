@@ -4,17 +4,19 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function Nav() {
-  const [view, setView] = useState(true);
+  const [view, setView] = useState(false);
 
+  function handleScrollNavChange() {
+    const scroll = document.documentElement.scrollTop;
+
+    if (scroll > 100) {
+      setView(false);
+    } else {
+      setView(true);
+    }
+  }
   useEffect(() => {
-    window.addEventListener("scroll", () => {
-      const scroll = document.documentElement.scrollTop;
-      if (scroll > 50) {
-        setView(true);
-      } else {
-        setView(false);
-      }
-    });
+    window.addEventListener("scroll", handleScrollNavChange);
   }, []);
 
   return (
