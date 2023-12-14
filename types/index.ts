@@ -15,6 +15,9 @@ export interface ArticleContentProps {
   content: string;
   img: StaticImageData;
   imgAlt: string;
+  detail?: {
+    tag?: [string];
+  };
 }
 
 export interface Stats {
