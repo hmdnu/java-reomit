@@ -136,25 +136,4 @@ export const articleCardHome = [
     dateCreated: "Agustus 2023",
     tag: ["Kesenian"],
   },
-
-  {
-    title: "Sejarah Reog Ponorogo di Jatim",
-    creator: "John Doe",
-    dateCreated: "Agustus 2023",
-    tag: ["Kesenian"],
-  },
-
-  {
-    title: "Sejarah Reog Ponorogo di Jatim",
-    creator: "John Doe",
-    dateCreated: "Agustus 2023",
-    tag: ["Kesenian"],
-  },
-
-  {
-    title: "Sejarah Reog Ponorogo di Jatim",
-    creator: "John Doe",
-    dateCreated: "Agustus 2023",
-    tag: ["Kesenian"],
-  },
 ];
