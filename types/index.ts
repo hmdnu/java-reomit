@@ -6,18 +6,22 @@ export interface CarouselHome {
   paragraph: string;
 }
 
-export interface ArticleContentProps {
+export interface ArticleCardTypes {
   imgAuthor: StaticImageData;
   author: string;
   date: string;
   category: string;
   title: string;
-  content: string;
+  contentPreview?: string;
   img: StaticImageData;
   imgAlt: string;
   detail?: {
     tag?: [string];
   };
+}
+
+export interface ArticleDetail extends ArticleCardTypes {
+  content: string;
 }
 
 export interface Stats {
