@@ -9,7 +9,7 @@ export default function Nav() {
   function handleScrollNavChange() {
     const scroll = document.documentElement.scrollTop;
 
-    if (scroll > 100) {
+    if (scroll > 0) {
       setView(false);
     } else {
       setView(true);
