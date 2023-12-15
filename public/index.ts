@@ -7,5 +7,6 @@ import quote from "./images/quote.png";
 import iconWa from "./icons/wa.svg";
 import iconIg from "./icons/ig.svg";
 import iconYt from "./icons/yt.svg";
+import arrDown from "./icons/arrowDown.svg";
 
-export { carousel1, carousel2, carousel3, profile, quote, iconWa, iconIg, iconYt };
+export { carousel1, carousel2, carousel3, profile, quote, iconWa, iconIg, iconYt, arrDown };
