@@ -6,12 +6,12 @@ export default function ArticleContent({ articleTitle }: { articleTitle: string 
   const articles = articleDetail.filter((article) => article.title === articleTitle);
 
   return (
-    <div className="h-[400px]">
+    <div>
       {articles.map((article: ArticleDetail, i: number) => (
-        <div key={i}>
-          <Image src={article.img} alt={article.imgAlt} className="w-full h-full object-cover" />
-          <div className="main-layout mt-5">
-            <h1 className="text-h2 font-semibold">{article.title}</h1>
+        <div className="" key={i}>
+          <Image src={article.img} alt={article.imgAlt} className="w-full h-[400px] object-cover" />
+          <div className="w-[68%] m-auto my-[60px]">
+            <h1 className="text-h2 font-bold">{article.title}</h1>
             <div className="flex gap-3 mt-8">
               <Image src={article.imgAuthor} width={40} height={40} alt="profile"></Image>
               <div>
@@ -22,7 +22,7 @@ export default function ArticleContent({ articleTitle }: { articleTitle: string 
                 <h4 className="text-h7 text-themeRed">{article.category}</h4>
               </div>
             </div>
-            <p className="text-h7 mt-5 text-justify">{article.content}</p>
+            <p className="text-h5 mt-5 text-justify">{article.content}</p>
           </div>
         </div>
       ))}
