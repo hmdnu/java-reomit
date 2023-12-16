@@ -11,7 +11,7 @@ export default function FilterDropdownEvent() {
     window.onclick = (event) => {
       const target = event.target as HTMLElement;
 
-      if (!target.matches("#drop-btn")) {
+      if (!target.matches("#drop-btn") && !target.matches("#arrow-btn")) {
         isDropDown(true);
 
         if (!target.matches("#container-dropdown")) {
@@ -21,20 +21,24 @@ export default function FilterDropdownEvent() {
     };
   }, []);
 
-  function test() {
-    console.log(dropDownContainer.current);
-  }
-
   return (
     <div className="relative">
-      <button
-        id="drop-btn"
-        onClick={() => isDropDown((prev) => !prev)}
-        className="border rounded-[6px] border-fontSecondary font-medium text-h5 px-[13px] py-[10px] flex gap-8 items-center"
-      >
-        Semua
-        <Image src={arrDown} alt="arrow down" width={12} className={`${dropDown ? "rotate-180" : "rotate-0"}`} />
-      </button>
+      <div>
+        <button
+          id="drop-btn"
+          onClick={() => isDropDown((prev) => !prev)}
+          className="border rounded-[6px] border-fontSecondary font-medium text-h5 px-[13px] py-[10px] flex gap-8 items-center"
+        >
+          Semua
+          <Image
+            id="arrow-btn"
+            src={arrDown}
+            alt="arrow down"
+            width={12}
+            className={`${dropDown ? "rotate-180" : "rotate-0"}`}
+          />
+        </button>
+      </div>
 
       {/* dropdown container */}
       {dropDown ? (

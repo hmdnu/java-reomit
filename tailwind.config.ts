@@ -38,6 +38,7 @@ const config: Config = {
       themeSecondary: "#BAD7E9",
       themeGray: "#323232",
       themeRed: "#CA4459",
+      fontGray: "#D8D8D8",
     },
   },
   plugins: [],
