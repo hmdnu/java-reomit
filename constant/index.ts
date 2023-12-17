@@ -1,5 +1,23 @@
-import { CarouselHome, Stats, ArticleCardTypes, ArticleDetail } from "@/types";
-import { profile, carousel1, carousel2 } from "@/public";
+import {
+  carousel1,
+  carousel2,
+  jaranKepang,
+  karapanSapi,
+  kasada,
+  keboan,
+  kedukBeji,
+  larungSembonyo,
+  lontongBalap,
+  ludruk,
+  profile,
+  rawon,
+  reog,
+  rujak,
+  soto,
+  tariGandrung,
+  tariRemo,
+} from "@/public";
+import { ArticleCardTypes, CarouselHome, Stats } from "@/types";
 
 export const navLinks = [
   {
@@ -135,5 +153,26 @@ export const articleCardHome = [
     creator: "John Doe",
     dateCreated: "Agustus 2023",
     tag: ["Kesenian"],
+  },
+];
+
+export const gallery = [
+  {
+    kuliner: {
+      img: [soto, rawon, lontongBalap, rujak],
+      altImg: ["soto", "rawon", "lontongBalap", "rujak"],
+    },
+  },
+  {
+    kesenian: {
+      img: [jaranKepang, karapanSapi, ludruk, reog, tariGandrung, tariRemo],
+      altImg: ["jaranKepang", "karapanSapi", "ludruk", "reog", "tariGandrung", "tariRemo"],
+    },
+  },
+  {
+    tradisi: {
+      img: [kasada, keboan, kedukBeji, larungSembonyo],
+      altImg: ["kasada", "keboan", "kedukBeji", "larungSembonyo"],
+    },
   },
 ];
