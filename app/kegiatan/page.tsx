@@ -1,4 +1,5 @@
 import { FilterDropdownEvent, EventCard } from "@/components";
+import { eventCard } from "@/constant";
 
 export default function page() {
   return (
@@ -12,8 +13,8 @@ export default function page() {
 
         {/* event card */}
         <div className="grid place-items-center my-10 grid-cols-3 gap-[50px]">
-          {[...Array(6)].map((e, i) => (
-            <EventCard key={i} />
+          {eventCard.map((event, i) => (
+            <EventCard key={i} event={event} />
           ))}
         </div>
       </div>

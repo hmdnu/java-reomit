@@ -16,7 +16,7 @@ const config: Config = {
       backgroundImage: {
         carousel1: "url('/images/carousel1.png')",
         carousel2: "url('/images/carousel2.png')",
-        carousel3: "url('/images/carousel3.png')",
+        carousel3: "url('/images/carousel3.jpeg')",
         quoteImg: "url('/images/quoteImg.png')",
       },
       fontSize: {
@@ -39,6 +39,7 @@ const config: Config = {
       themeGray: "#323232",
       themeRed: "#CA4459",
       fontGray: "#D8D8D8",
+      fontBlue: "#2B3467",
     },
   },
   plugins: [],

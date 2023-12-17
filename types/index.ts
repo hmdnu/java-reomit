@@ -28,3 +28,26 @@ export interface Stats {
   heading: string;
   sub: string;
 }
+
+export interface EventCardTypes {
+  title: string;
+  date: string;
+  time: string;
+  location: string;
+  imgPath: StaticImageData | string;
+}
+
+export interface EventCardDetailTypes extends EventCardTypes {
+  decsriptionPreview: string;
+  description: string;
+  eventShedule: EventScheduleItems[];
+  sponsor: string[];
+  rincianTambahan?: [{}];
+  isGratis: boolean;
+}
+
+export interface EventScheduleItems {
+  name: string;
+  startTime: string;
+  endTime: string;
+}
