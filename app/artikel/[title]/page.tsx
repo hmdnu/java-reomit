@@ -1,4 +1,4 @@
-import ArticleContent from "@/components/ArticleContent";
+import ArticleContent from "@/components/artikelPage/ArticleContent";
 
 export default function Page({ params }: { params: { title: string } }) {
   const articleTitle = params.title.split("%20").join(" ");
