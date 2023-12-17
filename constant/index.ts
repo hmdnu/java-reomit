@@ -1,5 +1,24 @@
 import { ArticleCardTypes, ArticleDetail, CarouselHome, EventCardDetailTypes, EventCardTypes, Stats } from "@/types";
-import { carousel1, carousel2, carousel3, profile } from "@/public";
+import {
+  carousel1,
+  carousel2,
+  carousel3,
+  profile,
+  karapanSapi,
+  jaranKepang,
+  kasada,
+  keboan,
+  kedukBeji,
+  larungSembonyo,
+  lontongBalap,
+  ludruk,
+  rawon,
+  reog,
+  rujak,
+  soto,
+  tariGandrung,
+  tariRemo,
+} from "@/public";
 
 export const navLinks = [
   {
@@ -240,3 +259,24 @@ export const eventCardDetail: EventCardDetailTypes[] = [
 ];
 
 export const schedule: Array<string> = ["Susunan Acara", "Sponsor", "Rincian Tambahan"];
+
+export const gallery = [
+  {
+    kuliner: {
+      img: [soto, rawon, lontongBalap, rujak],
+      altImg: ["soto", "rawon", "lontongBalap", "rujak"],
+    },
+  },
+  {
+    kesenian: {
+      img: [jaranKepang, karapanSapi, ludruk, reog, tariGandrung, tariRemo],
+      altImg: ["jaranKepang", "karapanSapi", "ludruk", "reog", "tariGandrung", "tariRemo"],
+    },
+  },
+  {
+    tradisi: {
+      img: [kasada, keboan, kedukBeji, larungSembonyo],
+      altImg: ["kasada", "keboan", "kedukBeji", "larungSembonyo"],
+    },
+  },
+];
