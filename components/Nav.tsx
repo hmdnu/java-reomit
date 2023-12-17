@@ -38,7 +38,9 @@ export default function Nav() {
       } transition-all`}
     >
       <div className="m-auto w-[90%] flex justify-between items-center text-fontPrimary">
-        <h1 className="text-h3 font-semibold">Java Reomit.</h1>
+        <Link href={"/"} className="text-h3 font-semibold">
+          Java Reomit.
+        </Link>
         <div className="flex gap-[30px]">
           {navLinks.map((link, i) => (
             <div key={i}>
