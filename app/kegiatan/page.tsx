@@ -1,6 +1,10 @@
 import { FilterDropdownEvent, EventCard } from "@/components";
 import { eventCard } from "@/constant";
 
+export const metadata = {
+  title: "Kegiatan",
+};
+
 export default function page() {
   return (
     <section className="mt-32 w-[75%] m-auto">
