@@ -38,6 +38,7 @@ export interface EventCardTypes {
 }
 
 export interface EventCardDetailTypes extends EventCardTypes {
+  fullAdress: string;
   decsriptionPreview: string;
   description: string;
   eventShedule: EventScheduleItems[];

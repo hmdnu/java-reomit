@@ -11,7 +11,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        poppins: ["var(--font-montserrat)"],
+        montserrat: ["var(--font-montserrat)"],
       },
       backgroundImage: {
         carousel1: "url('/images/carousel1.png')",

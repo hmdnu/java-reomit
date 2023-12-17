@@ -18,25 +18,6 @@
   }
 }
 
-.btn::after {
-  content: "";
-  background-color: #2b3467;
-  position: absolute;
-  height: 3px;
-  width: 100%;
-  bottom: -14px;
-  left: 0;
-  opacity: 0;
+.gradient {
+  background: conic-gradient(#fff 90deg, #646464 20deg);
 }
-
-.btn:focus::after {
-  opacity: 1;
-}
-
-/*  after:content-['']
-            after:bg-fontBlue
-            after:absolute 
-            after:h-[3px] 
-            after:w-full
-            after:bottom-[-14px] 
-            after:left-0 */

@@ -1,5 +1,5 @@
 import { eventCardDetail } from "@/constant";
-import { EventDetailSeeMore, EventDetailShedule } from "@/components";
+import { EventDetailSeeMore, EventDetailShedule, AsideEventDetail } from "@/components";
 
 export default function page({ params }: { params: { title: string } }) {
   const eventTitle = params.title.split("%20").join(" ");
@@ -14,7 +14,7 @@ export default function page({ params }: { params: { title: string } }) {
         </h1>
       </div>
       {/* info of event */}
-      <div className="mt-[40px]">
+      <div className="mt-[40px] flex justify-between">
         {/* title desc etc */}
         <div className="w-[60%]">
           <div className="text-h3 font-semibold text-themeRed flex gap-5">
@@ -26,6 +26,9 @@ export default function page({ params }: { params: { title: string } }) {
           {/* schedule etc */}
           {event ? <EventDetailShedule event={event} /> : null}
         </div>
+
+        {/* aside */}
+        <AsideEventDetail />
       </div>
     </section>
   );
