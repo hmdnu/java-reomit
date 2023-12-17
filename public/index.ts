@@ -10,6 +10,7 @@ import iconYt from "./icons/yt.svg";
 import arrDown from "./icons/arrowDown.svg";
 import location from "./icons/location.svg";
 import clock from "./icons/clock.svg";
+import iconLink from "./icons/link.svg";
 
 import lontongBalap from "./images/lontong-balap.jpg";
 import rawon from "./images/rawon.jpg";
@@ -54,4 +55,5 @@ export {
   arrDown,
   clock,
   location,
+  iconLink,
 };

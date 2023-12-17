@@ -11,6 +11,7 @@ import Footer from "./Footer";
 import Gallery from "./galeriPage/Gallery";
 import Nav from "./Nav";
 import QuoteHomepage from "./homePage/QuoteHomepage";
+import AsideEventDetail from "./kegiatanPage/AsideEventDetail";
 
 export {
   ArticleCard,
@@ -25,5 +26,6 @@ export {
   Footer,
   Gallery,
   Nav,
+  AsideEventDetail,
   QuoteHomepage,
 };
