@@ -1,16 +1,17 @@
-import ArticleCard from "./ArticleCard";
-import ArticleCardHome from "./ArticleCardHome";
-import ArticleContent from "./ArticleContent";
-import CarouselHome from "./CarouselHome";
-import CategoryCulture from "./CategoryCulture";
-import FilterDropdownEvent from "./FilterDropdownEvent";
+import ArticleCard from "./artikelPage/ArticleCard";
+import ArticleCardHome from "./homePage/ArticleCardHome";
+import ArticleContent from "./artikelPage/ArticleContent";
+import CarouselHome from "./homePage/CarouselHome";
+import CategoryCulture from "./homePage/CategoryCulture";
+import FilterDropdownEvent from "./kegiatanPage/FilterDropdownEvent";
 import EventCard from "./kegiatanPage/EventCard";
 import EventDetailSeeMore from "./kegiatanPage/EventDetailSeeMore";
 import EventDetailShedule from "./kegiatanPage/EventDetailShedule";
 import Footer from "./Footer";
-import Gallery from "./Gallery";
+import Gallery from "./galeriPage/Gallery";
 import Nav from "./Nav";
-import QuoteHomepage from "./QuoteHomepage";
+import QuoteHomepage from "./homePage/QuoteHomepage";
+
 export {
   ArticleCard,
   EventCard,
