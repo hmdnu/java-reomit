@@ -1,6 +1,10 @@
 import { CarouselHome, CategoryCulture, ArticleCardHome, QuoteHomepage } from "@/components";
 import { stats } from "@/constant";
 
+export const metadata = {
+  title: "Beranda",
+};
+
 export default function Home() {
   return (
     <main>

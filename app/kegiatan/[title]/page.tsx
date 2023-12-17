@@ -1,6 +1,20 @@
 import { eventCardDetail } from "@/constant";
 import { EventDetailSeeMore, EventDetailShedule, AsideEventDetail } from "@/components";
 
+interface props {
+  params: {
+    title: string;
+  };
+}
+
+export function generateMetadata({ params }: props) {
+  const title = params.title.split("%20").join(" ");
+
+  return {
+    title,
+  };
+}
+
 export default function page({ params }: { params: { title: string } }) {
   const eventTitle = params.title.split("%20").join(" ");
 
