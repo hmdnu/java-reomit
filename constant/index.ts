@@ -1,5 +1,5 @@
-import { CarouselHome, Stats, ArticleCardTypes, ArticleDetail } from "@/types";
-import { profile, carousel1, carousel2 } from "@/public";
+import { ArticleCardTypes, ArticleDetail, CarouselHome, EventCardDetailTypes, EventCardTypes, Stats } from "@/types";
+import { carousel1, carousel2, carousel3, profile } from "@/public";
 
 export const navLinks = [
   {
@@ -75,7 +75,7 @@ export const articleCards: ArticleCardTypes[] = [
   },
 ];
 
-export const articleDetail = [
+export const articleDetail: ArticleDetail[] = [
   {
     imgAuthor: profile,
     author: "John Doe",
@@ -137,3 +137,106 @@ export const articleCardHome = [
     tag: ["Kesenian"],
   },
 ];
+
+export const eventCard: EventCardTypes[] = [
+  {
+    title: "Festival Budaya Nusantara (FBN) VI Tahun 2023",
+    date: "10 Des 2023",
+    time: "09.00 WIB",
+    location: "Gedung Graha Cakrawala, Universitas Negeri Malang, Sumbersari, Kec. Lowokwaru",
+    imgPath: carousel3,
+  },
+  {
+    title: "Festival Budaya Nusantara (FBN) VI Tahun 2023",
+    date: "10 Des 2023",
+    time: "09.00 WIB",
+    location: "Gedung Graha Cakrawala, Universitas Negeri Malang, Sumbersari, Kec. Lowokwaru",
+    imgPath: carousel3,
+  },
+  {
+    title: "Festival Budaya Nusantara (FBN) VI Tahun 2023",
+    date: "10 Des 2023",
+    time: "09.00 WIB",
+    location: "Gedung Graha Cakrawala, Universitas Negeri Malang, Sumbersari, Kec. Lowokwaru",
+    imgPath: carousel3,
+  },
+  {
+    title: "Festival Budaya Nusantara (FBN) VI Tahun 2023",
+    date: "10 Des 2023",
+    time: "09.00 WIB",
+    location: "Gedung Graha Cakrawala, Universitas Negeri Malang, Sumbersari, Kec. Lowokwaru",
+    imgPath: carousel3,
+  },
+  {
+    title: "Festival Budaya Nusantara (FBN) VI Tahun 2023",
+    date: "10 Des 2023",
+    time: "09.00 WIB",
+    location: "Gedung Graha Cakrawala, Universitas Negeri Malang, Sumbersari, Kec. Lowokwaru",
+    imgPath: carousel3,
+  },
+  {
+    title: "Festival Budaya Nusantara (FBN) VI Tahun 2023",
+    date: "10 Des 2023",
+    time: "09.00 WIB",
+    location: "Gedung Graha Cakrawala, Universitas Negeri Malang, Sumbersari, Kec. Lowokwaru",
+    imgPath: carousel3,
+  },
+];
+
+export const eventCardDetail: EventCardDetailTypes[] = [
+  {
+    title: "Festival Budaya Nusantara (FBN) VI Tahun 2023",
+    date: "10 Des 2023",
+    time: "09.00 - 13.30",
+    location: "Gedung Graha Cakrawala, Universitas Negeri Malang, Sumbersari, Kec. Lowokwaru",
+    imgPath: "/images/carousel3.jpeg",
+
+    decsriptionPreview:
+      "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit",
+
+    description:
+      "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit",
+    eventShedule: [
+      {
+        name: "Registrasi & Open Gate",
+        startTime: "09.00",
+        endTime: "10.00",
+      },
+      {
+        name: "Opening Ceremony",
+        startTime: "10.00",
+        endTime: "10.05",
+      },
+      {
+        name: "Sambutan - Sambutan",
+        startTime: "10.05",
+        endTime: "10.20",
+      },
+      {
+        name: "Lomba Seni Lukis",
+        startTime: "10.20",
+        endTime: "11.20",
+      },
+      {
+        name: "Tari Remo & Yosakai",
+        startTime: "10.20",
+        endTime: "11.20",
+      },
+      {
+        name: "ISHOMA",
+        startTime: "11.20",
+        endTime: "13.00 ",
+      },
+      {
+        name: "Penutupan",
+        startTime: "13.00",
+        endTime: "13.30",
+      },
+    ],
+    sponsor: ["Amazon", "Apple", "Google", "Meta"],
+    rincianTambahan: [{}],
+    isGratis: true,
+  },
+];
+
+export const schedule: Array<string> = ["Susunan Acara", "Sponsor", "Rincian Tambahan"];
