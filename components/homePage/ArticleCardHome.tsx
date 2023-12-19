@@ -11,7 +11,7 @@ export default function ArticleCardHome() {
       </div>
 
       {/* article card container */}
-      <div className="w-[80%] m-auto mt-[60px] grid lg:grid-cols-3 md:grid-cols-2 place-items-center gap-[60px]">
+      <div className="w-[80%] m-auto mt-[60px] grid md:grid-cols-3 sm:grid-cols-2 place-items-center gap-[60px]">
         {articleCardHome.map((article, i) => (
           <div key={i} className="bg-themeGray rounded-[20px] shadow-[4px_8px_30px_rgba(0,0,0,.45)] w-[340px]">
             <Image src={carousel2} alt="pic" width={360} className="rounded-[20px]" />

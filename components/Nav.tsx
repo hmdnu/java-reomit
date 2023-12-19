@@ -3,10 +3,15 @@ import { navLinks } from "@/constant";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
+
+import { hamburger } from "@/public";
 
 export default function Nav() {
   const [view, setView] = useState(false);
   const [navBg, setNavBg] = useState(true);
+  const [mobileView, setMobileView] = useState(false);
+
   const pathname = usePathname();
 
   function handleScrollNavChange() {
@@ -38,10 +43,10 @@ export default function Nav() {
       } transition-all`}
     >
       <div className="m-auto w-[90%] flex justify-between items-center text-fontPrimary">
-        <Link href={"/"} className="text-h3 font-semibold">
+        <Link href={"/"} className="sm:text-h3 text-h4 font-semibold">
           Java Reomit.
         </Link>
-        <div className="flex gap-[30px]">
+        <div className="gap-[30px] sm:flex hidden">
           {navLinks.map((link, i) => (
             <div key={i}>
               <Link className="text-h5 font-medium" href={link.link}>
@@ -49,6 +54,27 @@ export default function Nav() {
               </Link>
             </div>
           ))}
+        </div>
+        {/* hamburger menu */}
+        <div className="sm:hidden flex relative">
+          <Image
+            onClick={() => setMobileView((prev) => !prev)}
+            src={hamburger}
+            alt="hamburger"
+            width={20}
+            className="cursor-pointer"
+          />
+
+          {/* nav link mobile responsive */}
+          <div className="gap-[30px] hidden">
+            {navLinks.map((link, i) => (
+              <div key={i}>
+                <Link className="text-h5 font-medium" href={link.link}>
+                  {link.name}
+                </Link>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </nav>

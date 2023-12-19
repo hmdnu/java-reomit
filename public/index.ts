@@ -29,6 +29,8 @@ import keboan from "./images/keboan.jpeg";
 import kedukBeji from "./images/keduk-beji.jpeg";
 import larungSembonyo from "./images/larung-sembonyo.webp";
 
+import hamburger from "./icons/hamburger.svg";
+
 export {
   carousel1,
   carousel2,
@@ -56,4 +58,5 @@ export {
   clock,
   location,
   iconLink,
+  hamburger,
 };
