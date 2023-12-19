@@ -1,4 +1,3 @@
-import { ArticleCardTypes, ArticleDetail, CarouselHome, EventCardDetailTypes, EventCardTypes, Stats } from "@/types";
 import {
   carousel1,
   carousel2,
@@ -19,6 +18,7 @@ import {
   tariGandrung,
   tariRemo,
 } from "@/public";
+import { ArticleCardTypes, ArticleDetail, CarouselHome, EventCardDetailTypes, EventCardTypes, Stats } from "@/types";
 
 export const navLinks = [
   {
@@ -266,18 +266,38 @@ export const gallery = [
     kuliner: {
       img: [soto, rawon, lontongBalap, rujak],
       altImg: ["soto", "rawon", "lontongBalap", "rujak"],
+      title: [
+        "Harmoni Rasa Indonesia dalam Sebatang Mangkok Soto",
+        "Hitamnya Rawon, Kelezatan Tradisi Jawa Timur",
+        "Petualangan Rasa Lontong Balap Surabaya",
+        "Rujak Segar dalam Goyangan Rasa yang Mencengangkan",
+      ],
     },
   },
   {
     kesenian: {
       img: [jaranKepang, karapanSapi, ludruk, reog, tariGandrung, tariRemo],
       altImg: ["jaranKepang", "karapanSapi", "ludruk", "reog", "tariGandrung", "tariRemo"],
+      title: [
+        "Pesona Jaran Kepang dalam Seni Rakyat",
+        "Exploring the Tradition of Karapan Sapi",
+        "Ludruk, Perpaduan Komedi dan Kearifan Lokal Jawa Timur ",
+        "Pesona Mistis dan Kecantikan Reog Ponorogo",
+        "Keindahan Tari Gandrung yang Mengharukan",
+        "KesenianPesona dan Makna Tari Remo",
+      ],
     },
   },
   {
     tradisi: {
       img: [kasada, keboan, kedukBeji, larungSembonyo],
       altImg: ["kasada", "keboan", "kedukBeji", "larungSembonyo"],
+      title: [
+        "Keharmonisan Spiritual dalam Tradisi Tengger",
+        "Tradisi Kebo-keboan dalam Budaya Khas Banyuwangi",
+        "Ritual Kesucian Air yang Memperkaya Kebudayaan Jawa",
+        "Perwujudan Rasa Syukur Nelayan dengan Tradisi Larung Sembonyo",
+      ],
     },
   },
 ];
