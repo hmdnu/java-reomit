@@ -30,6 +30,7 @@ import kedukBeji from "./images/keduk-beji.jpeg";
 import larungSembonyo from "./images/larung-sembonyo.webp";
 
 import hamburger from "./icons/hamburger.svg";
+import search from "./icons/search.svg";
 
 export {
   carousel1,
@@ -59,4 +60,5 @@ export {
   location,
   iconLink,
   hamburger,
+  search,
 };

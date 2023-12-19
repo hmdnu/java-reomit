@@ -1,4 +1,4 @@
-import { FilterDropdownEvent, EventCard } from "@/components";
+import { FilterDropdownEvent, EventCard, SearchBarEvent } from "@/components";
 import { eventCard } from "@/constant";
 
 export const metadata = {
@@ -9,9 +9,9 @@ export default function page() {
   return (
     <section className="mt-32 w-[75%] m-auto">
       <div>
-        <div className="text-fontPrimary flex gap-16 items-center">
+        <div className="text-fontPrimary flex gap-[32px] items-center">
           <h1 className="text-h2 font-bold ">Event</h1>
-          {/* dropdown */}
+          <SearchBarEvent />
           <FilterDropdownEvent />
         </div>
 
