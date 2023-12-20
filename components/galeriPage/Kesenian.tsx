@@ -3,9 +3,9 @@ import Image from "next/image";
 
 export default function Kesenian() {
   return (
-    <div className="columns-2 sm:columns-3 lg:columns-3 gap-5 space-y-1">
+    <div className="columns-3 gap-5 mx-auto space-y-3">
       {gallery.map((gallery, i) => (
-        <div key={i} className="flex flex-wrap gap-5">
+        <div key={i} className="grid gap-5">
           {gallery.kesenian?.img.map((img, i) => (
             <Image
               key={i}
