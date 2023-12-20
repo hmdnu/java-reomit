@@ -5,7 +5,10 @@ export default function DaftarKesenian() {
   return (
     <div>
       {gallery.map((gallery, i) => (
-        <div key={i} className="grid grid-cols-4 mx-auto place-items-center">
+        <div
+          key={i}
+          className="grid grid-cols-1 sm:grid-cols-2 sm:place-items-center md:grid-cols-4 mx-auto md:place-items-center"
+        >
           {gallery.kesenian?.img.map((img, j) => (
             <div key={j} className="w-[280px] mt-5">
               <Image

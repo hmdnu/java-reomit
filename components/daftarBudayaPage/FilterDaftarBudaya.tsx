@@ -28,7 +28,7 @@ export default function FilterDaftarBudaya() {
         <button
           id="drop-btn"
           onClick={() => isDropDown((prev) => !prev)}
-          className="border rounded-[6px] border-fontSecondary font-medium text-h5 px-[13px] py-[10px] flex gap-8 items-center"
+          className="border rounded-[6px] border-fontSecondary font-medium text-h7 md:text-h5 px-[13px] py-[10px] flex gap-8 items-center"
         >
           Kabupaten / Kota
           <Image
