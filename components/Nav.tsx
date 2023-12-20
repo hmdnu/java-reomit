@@ -38,7 +38,7 @@ export default function Nav() {
 
   return (
     <nav
-      className={`w-full py-[30px] fixed top-0 left-0 z-50 ${
+      className={`w-full py-[30px] fixed top-0 left-0 z-[9999] ${
         navBg ? `${view ? "bg-white" : "bg-transparent"}` : "bg-white"
       } transition-all`}
     >
