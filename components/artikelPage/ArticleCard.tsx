@@ -10,35 +10,42 @@ export default function ArticleCard({ articleContent }: { articleContent: Articl
   return (
     <div
       onClick={() => router.push(`/artikel/${articleContent.title}`)}
-      className="grid gap-5 border-t-2 cursor-pointer"
+      className="cursor-pointer border-b-[1.5px] last:border-none pb-5"
     >
-      {/* <Link href={{ pathname: "/article/detail", query: { name: articleContent.title } }}> */}
-      <div className="flex gap-3 mt-8">
-        <Image src={articleContent.imgAuthor} width={40} height={40} alt="profile" />
+      <div className="flex items-center gap-3 sm:mb-5 mb-3">
+        <Image
+          src={articleContent.imgAuthor}
+          alt="profile"
+          className="sm:w-[45px] sm:h-[45px] h-[30px] w-[30px] rounded-full object-cover object-left"
+        />
+        {/* author */}
         <div>
           <div className="flex gap-1">
-            <h3 className="text-h6 font-semibold">{articleContent.author}</h3>
-            <h3 className="text-h6 text-gray-500">{articleContent.date}</h3>
+            <h3 className="sm:text-h6 text-h8 font-semibold">{articleContent.author}</h3>
+            <h3 className="sm:text-h6 text-h8 text-gray-500">{articleContent.date}</h3>
           </div>
-          <h4 className="text-h7 text-themeRed">{articleContent.category}</h4>
+          <h4 className="sm:text-h6 text-h8 text-themeRed">{articleContent.category}</h4>
         </div>
       </div>
-      <div className="flex gap-5">
-        <div className="grid gap-2 max-w-lg mt-5">
-          <h1 className="responsive-h1">{articleContent.title}</h1>
-          <p className="text-h7 line-clamp-3">{articleContent.contentPreview}</p>
+      <div className="flex justify-between items-center">
+        <div className="grid gap-2 max-w-lg mt-1">
+          <h1 className="sm:text-h4 text-h7 font-bold">{articleContent.title}</h1>
+          <p className="sm:text-h6 font-normal text-h8 max-sm:hidden">{articleContent.contentPreview}</p>
           <Link
-            className="text-h7 text-themePrimary"
+            className="sm:text-h7 text-h8 text-themePrimary"
             href={{ pathname: "/artikel/detail", query: { name: articleContent.title } }}
           >
             Baca Selengkapnya
           </Link>
         </div>
         <div>
-          <Image src={articleContent.img} alt={articleContent.imgAlt} width={700} className="rounded-lg" />
+          <Image
+            src={articleContent.img}
+            alt={articleContent.imgAlt}
+            className="rounded-lg sm:w-[300px] sm:h-auto w-[150px] h-[130px]"
+          />
         </div>
       </div>
-      {/* </Link> */}
     </div>
   );
 }

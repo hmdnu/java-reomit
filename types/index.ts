@@ -52,3 +52,23 @@ export interface EventScheduleItems {
   startTime: string;
   endTime: string;
 }
+
+export interface CategoryBudayaTypes {
+  kuliner: {
+    img: StaticImageData;
+    altImg: string;
+    title: string;
+  }[];
+
+  tradisi: {
+    img: StaticImageData;
+    altImg: string;
+    title: string;
+  }[];
+
+  kesenian: {
+    img: StaticImageData;
+    altImg: string;
+    title: string;
+  }[];
+}
