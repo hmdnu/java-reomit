@@ -15,7 +15,7 @@ import EventDetailSeeMore from "./kegiatanPage/EventDetailSeeMore";
 import EventDetailShedule from "./kegiatanPage/EventDetailShedule";
 import FilterDropdown from "./FilterDropdown";
 import AsideEventDetail from "./kegiatanPage/AsideEventDetail";
-import SearchBarEvent from "./SearchBar";
+import SearchBar from "./SearchBar";
 import BudayaCategory from "./daftarBudayaPage/BudayaCategory";
 
 export {
@@ -36,6 +36,6 @@ export {
   Nav,
   AsideEventDetail,
   QuoteHomepage,
-  SearchBarEvent,
+  SearchBar,
   BudayaCategory,
 };
