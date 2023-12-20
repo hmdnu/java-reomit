@@ -2,12 +2,12 @@ import {
   carousel1,
   carousel2,
   carousel3,
+  grebegSuro,
   jaranKepang,
   karapanSapi,
   kasada,
   keboan,
   kedukBeji,
-  larungSembonyo,
   lontongBalap,
   ludruk,
   profile,
@@ -276,8 +276,8 @@ export const gallery = [
   },
   {
     kesenian: {
-      img: [jaranKepang, karapanSapi, ludruk, reog, tariGandrung, tariRemo],
-      altImg: ["jaranKepang", "karapanSapi", "ludruk", "reog", "tariGandrung", "tariRemo"],
+      img: [jaranKepang, tariGandrung, karapanSapi, ludruk, reog, tariRemo],
+      altImg: ["jaranKepang", "tariGandrung", "karapanSapi", "ludruk", "reog", "tariRemo"],
       title: [
         "Pesona Jaran Kepang dalam Seni Rakyat",
         "Exploring the Tradition of Karapan Sapi",
@@ -290,13 +290,13 @@ export const gallery = [
   },
   {
     tradisi: {
-      img: [kasada, keboan, kedukBeji, larungSembonyo],
-      altImg: ["kasada", "keboan", "kedukBeji", "larungSembonyo"],
+      img: [keboan, kasada, kedukBeji, grebegSuro],
+      altImg: ["keboan", "kasada", "kedukBeji", "grebegSuro"],
       title: [
         "Keharmonisan Spiritual dalam Tradisi Tengger",
         "Tradisi Kebo-keboan dalam Budaya Khas Banyuwangi",
         "Ritual Kesucian Air yang Memperkaya Kebudayaan Jawa",
-        "Perwujudan Rasa Syukur Nelayan dengan Tradisi Larung Sembonyo",
+        "Judul Baru Untuk Grebeg Suro",
       ],
     },
   },
