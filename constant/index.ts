@@ -17,6 +17,7 @@ import {
   soto,
   tariGandrung,
   tariRemo,
+  larungSembonyo,
 } from "@/public";
 import {
   ArticleCardTypes,
