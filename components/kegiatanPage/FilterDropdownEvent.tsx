@@ -27,7 +27,7 @@ export default function FilterDropdownEvent() {
         <button
           id="drop-btn"
           onClick={() => isDropDown((prev) => !prev)}
-          className="border rounded-[10px] border-fontSecondary font-medium text-h5 px-[13px] py-[10px] flex gap-8 items-center"
+          className="border rounded-[10px] border-fontSecondary font-medium text-h5 px-[13px] py-[8px] flex gap-8 items-center"
         >
           Semua
           <Image

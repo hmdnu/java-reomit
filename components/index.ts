@@ -17,7 +17,7 @@ import EventDetailSeeMore from "./kegiatanPage/EventDetailSeeMore";
 import EventDetailShedule from "./kegiatanPage/EventDetailShedule";
 import FilterDropdownEvent from "./kegiatanPage/FilterDropdownEvent";
 import AsideEventDetail from "./kegiatanPage/AsideEventDetail";
-import SearchBarEvent from "./SearchBar";
+import SearchBar from "./SearchBar";
 
 export {
   ArticleCard,
@@ -39,5 +39,5 @@ export {
   Nav,
   AsideEventDetail,
   QuoteHomepage,
-  SearchBarEvent,
+  SearchBar,
 };

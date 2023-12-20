@@ -6,7 +6,7 @@ export default function SearchBarEvent() {
   return (
     <form
       onSubmit={(e) => e.preventDefault()}
-      className="flex gap-[10px] border rounded-[10px] border-fontSecondary w-[300px] h-[45px] items-center px-[24px] py-[18px]"
+      className="flex gap-[10px] border rounded-[10px] border-fontSecondary w-[300px] h-[40px] items-center px-[24px]"
     >
       <Image src={search} alt="search" width={20} />
       <input
