@@ -8,12 +8,16 @@ export default function ArticleContent({ articleTitle }: { articleTitle: string 
   return (
     <div>
       {articles.map((article: ArticleDetail, i: number) => (
-        <div className="" key={i}>
-          <Image src={article.img} alt={article.imgAlt} className="w-full h-[400px] object-cover" />
-          <div className="w-[68%] m-auto my-[60px]">
-            <h1 className="text-h2 font-bold">{article.title}</h1>
-            <div className="flex gap-3 mt-8">
-              <Image src={article.imgAuthor} width={40} height={40} alt="profile"></Image>
+        <div key={i}>
+          <Image
+            src={article.img}
+            alt={article.imgAlt}
+            className="w-full h-[400px] object-cover max-sm:object-right mb-[20px] sm:mb-[65px]"
+          />
+          <div className="sm:w-[68%] w-[75%] m-auto mb-[60px] flex flex-col gap-[20px] sm:gap-[36px]">
+            <h1 className="sm:text-h2 text-h5 font-bold">{article.title}</h1>
+            <div className="flex gap-3">
+              <Image src={article.imgAuthor} width={40} height={40} alt="profile" className="rounded-full" />
               <div>
                 <div className="flex gap-1">
                   <h3 className="text-h6 font-semibold">{article.author}</h3>
@@ -22,7 +26,7 @@ export default function ArticleContent({ articleTitle }: { articleTitle: string 
                 <h4 className="text-h7 text-themeRed">{article.category}</h4>
               </div>
             </div>
-            <p className="text-h5 mt-5 text-justify">{article.content}</p>
+            <p className="sm:text-h5 text-h7 text-justify">{article.content}</p>
           </div>
         </div>
       ))}
