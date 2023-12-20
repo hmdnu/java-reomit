@@ -18,7 +18,15 @@ import {
   tariGandrung,
   tariRemo,
 } from "@/public";
-import { ArticleCardTypes, ArticleDetail, CarouselHome, EventCardDetailTypes, EventCardTypes, Stats } from "@/types";
+import {
+  ArticleCardTypes,
+  ArticleDetail,
+  CarouselHome,
+  EventCardDetailTypes,
+  EventCardTypes,
+  Stats,
+  CategoryBudayaTypes,
+} from "@/types";
 
 export const navLinks = [
   {
@@ -32,6 +40,10 @@ export const navLinks = [
   {
     name: "Galeri",
     link: "/galeri",
+  },
+  {
+    name: "Budaya",
+    link: "/budaya",
   },
   {
     name: "Kegiatan",
@@ -260,6 +272,77 @@ export const eventCardDetail: EventCardDetailTypes[] = [
 ];
 
 export const schedule: Array<string> = ["Susunan Acara", "Sponsor", "Rincian Tambahan"];
+
+export const categoryBudaya: CategoryBudayaTypes = {
+  kuliner: [
+    {
+      img: soto,
+      altImg: "Soto",
+      title: "Harmoni Rasa Indonesia dalam Sebatang Mangkok Soto",
+    },
+    {
+      img: rawon,
+      altImg: "Rawon",
+      title: "Hitamnya Rawon, Kelezatan Tradisi Jawa Timur",
+    },
+    {
+      img: lontongBalap,
+      altImg: "Lontong Balap",
+      title: "Petualangan Rasa Lontong Balap Surabaya",
+    },
+    {
+      img: rujak,
+      altImg: "Rujak",
+      title: "Rujak Segar dalam Goyangan Rasa yang Mencengangkan",
+    },
+  ],
+
+  kesenian: [
+    {
+      img: jaranKepang,
+      altImg: "Jaran Kepang",
+      title: "Pesona Jaran Kepang dalam Seni Rakyat",
+    },
+    {
+      img: karapanSapi,
+      altImg: "Karapan Sapi",
+      title: "Exploring the Tradition of Karapan Sapi",
+    },
+    {
+      img: ludruk,
+      altImg: "Ludruk",
+      title: "Ludruk, Perpaduan Komedi dan Kearifan Lokal Jawa Timur",
+    },
+    {
+      img: reog,
+      altImg: "Reog",
+      title: "Pesona Mistis dan Kecantikan Reog Ponorogo",
+    },
+  ],
+
+  tradisi: [
+    {
+      img: kasada,
+      altImg: "Kasada",
+      title: "Keharmonisan Spiritual dalam Tradisi Tengger",
+    },
+    {
+      img: keboan,
+      altImg: "Keboan",
+      title: "Keharmonisan Spiritual dalam Tradisi Tengger",
+    },
+    {
+      img: kedukBeji,
+      altImg: "Keduk Beji",
+      title: "Ritual Kesucian Air yang Memperkaya Kebudayaan Jawa",
+    },
+    {
+      img: larungSembonyo,
+      altImg: "Larung Sembonyo",
+      title: "Perwujudan Rasa Syukur Nelayan dengan Tradisi Larung Sembonyo",
+    },
+  ],
+};
 
 export const gallery = [
   {
