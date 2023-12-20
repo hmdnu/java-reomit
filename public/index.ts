@@ -1,7 +1,7 @@
 import carousel1 from "./images/carousel1.png";
 import carousel2 from "./images/carousel2.png";
 import carousel3 from "./images/carousel3.jpeg";
-import profile from "./images/profile.png";
+import profile from "./images/profile.jpg";
 import quote from "./images/quote.png";
 
 import iconWa from "./icons/wa.svg";

@@ -7,7 +7,7 @@ export const metadata = {
 
 export default function Page() {
   return (
-    <main className="main-layout grid gap-8">
+    <main className="mt-32 mb-10 sm:w-[70%] w-[90%] m-auto grid gap-8">
       {articleCards.map((articleContent, index) => (
         <ArticleCard key={index} articleContent={articleContent} />
       ))}
