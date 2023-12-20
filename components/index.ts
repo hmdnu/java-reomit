@@ -5,6 +5,7 @@ import ArticleContent from "./artikelPage/ArticleContent";
 import DaftarKesenian from "./daftarBudayaPage/categoryBudaya/DaftarKesenian";
 import DaftarKuliner from "./daftarBudayaPage/categoryBudaya/DaftarKuliner";
 import DaftarTradisi from "./daftarBudayaPage/categoryBudaya/DaftarTradisi";
+import Gallery from "./galeriPage/Gallery";
 import ArticleCardHome from "./homePage/ArticleCardHome";
 import CarouselHome from "./homePage/CarouselHome";
 import CategoryCulture from "./homePage/CategoryCulture";
@@ -31,6 +32,7 @@ export {
   EventDetailShedule,
   FilterDropdown,
   Footer,
+  Gallery,
   Nav,
   AsideEventDetail,
   QuoteHomepage,
