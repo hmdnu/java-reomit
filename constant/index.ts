@@ -346,41 +346,112 @@ export const categoryBudaya: CategoryBudayaTypes = {
 
 export const gallery = [
   {
-    kuliner: {
-      img: [soto, rawon, lontongBalap, rujak],
-      altImg: ["soto", "rawon", "lontongBalap", "rujak"],
-      title: [
-        "Harmoni Rasa Indonesia dalam Sebatang Mangkok Soto",
-        "Hitamnya Rawon, Kelezatan Tradisi Jawa Timur",
-        "Petualangan Rasa Lontong Balap Surabaya",
-        "Rujak Segar dalam Goyangan Rasa yang Mencengangkan",
-      ],
-    },
+    kuliner: [
+      {
+        img: soto,
+        altImg: "soto",
+      },
+      {
+        img: rawon,
+        altImg: "rawon",
+      },
+      {
+        img: lontongBalap,
+        altImg: "lontongBalap",
+      },
+      {
+        img: rujak,
+        altImg: "rujak",
+      },
+    ],
   },
   {
-    kesenian: {
-      img: [jaranKepang, karapanSapi, ludruk, reog, tariGandrung, tariRemo],
-      altImg: ["jaranKepang", "karapanSapi", "ludruk", "reog", "tariGandrung", "tariRemo"],
-      title: [
-        "Pesona Jaran Kepang dalam Seni Rakyat",
-        "Exploring the Tradition of Karapan Sapi",
-        "Ludruk, Perpaduan Komedi dan Kearifan Lokal Jawa Timur ",
-        "Pesona Mistis dan Kecantikan Reog Ponorogo",
-        "Keindahan Tari Gandrung yang Mengharukan",
-        "KesenianPesona dan Makna Tari Remo",
-      ],
-    },
+    kesenian: [
+      {
+        img: jaranKepang,
+        altImg: "Jaran Kepang",
+      },
+      {
+        img: karapanSapi,
+        altImg: "Karapan Sapo",
+      },
+      {
+        img: ludruk,
+        altImg: "Ludruk",
+      },
+      {
+        img: reog,
+        altImg: "Reog",
+      },
+      {
+        img: tariGandrung,
+        altImg: "Tari Gandrung",
+      },
+      {
+        img: tariRemo,
+        altImg: "Tari Remo",
+      },
+    ],
   },
   {
-    tradisi: {
-      img: [kasada, keboan, kedukBeji, larungSembonyo],
-      altImg: ["kasada", "keboan", "kedukBeji", "larungSembonyo"],
-      title: [
-        "Keharmonisan Spiritual dalam Tradisi Tengger",
-        "Tradisi Kebo-keboan dalam Budaya Khas Banyuwangi",
-        "Ritual Kesucian Air yang Memperkaya Kebudayaan Jawa",
-        "Perwujudan Rasa Syukur Nelayan dengan Tradisi Larung Sembonyo",
-      ],
-    },
+    tradisi: [
+      {
+        img: kasada,
+        altImg: "kasada",
+      },
+      {
+        img: keboan,
+        altImg: "keboan",
+      },
+      {
+        img: kedukBeji,
+        altImg: "Keduk Beji",
+      },
+      {
+        img: larungSembonyo,
+        altImg: "Larung Sembonyo",
+      },
+    ],
   },
 ];
+
+// export const gallery = [
+//   {
+//     kuliner: {
+//       img: [soto, rawon, lontongBalap, rujak],
+//       altImg: ["soto", "rawon", "lontongBalap", "rujak"],
+//       title: [
+//         "Harmoni Rasa Indonesia dalam Sebatang Mangkok Soto",
+//         "Hitamnya Rawon, Kelezatan Tradisi Jawa Timur",
+//         "Petualangan Rasa Lontong Balap Surabaya",
+//         "Rujak Segar dalam Goyangan Rasa yang Mencengangkan",
+//       ],
+//     },
+//   },
+//   {
+//     kesenian: {
+//       img: [jaranKepang, karapanSapi, ludruk, reog, tariGandrung, tariRemo],
+//       altImg: ["jaranKepang", "karapanSapi", "ludruk", "reog", "tariGandrung", "tariRemo"],
+//       title: [
+//         "Pesona Jaran Kepang dalam Seni Rakyat",
+//         "Exploring the Tradition of Karapan Sapi",
+//         "Ludruk, Perpaduan Komedi dan Kearifan Lokal Jawa Timur ",
+//         "Pesona Mistis dan Kecantikan Reog Ponorogo",
+//         "Keindahan Tari Gandrung yang Mengharukan",
+//         "KesenianPesona dan Makna Tari Remo",
+//       ],
+//     },
+//   },
+//   {
+//     tradisi: {
+//       img: [kasada, keboan, kedukBeji, larungSembonyo],
+//       altImg: ["kasada", "keboan", "kedukBeji", "larungSembonyo"],
+//       title: [
+//         "Keharmonisan Spiritual dalam Tradisi Tengger",
+//         "Tradisi Kebo-keboan dalam Budaya Khas Banyuwangi",
+//         "Ritual Kesucian Air yang Memperkaya Kebudayaan Jawa",
+//         "Perwujudan Rasa Syukur Nelayan dengan Tradisi Larung Sembonyo",
+//       ],
+//     },
+//   },
+// ];

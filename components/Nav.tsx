@@ -41,7 +41,7 @@ export default function Nav() {
       setSearchBarNav(false);
     }
 
-    if (pathname == "/galeri" || pathname == "/kegiatan" || pathname == "/artikel") {
+    if (pathname == "/kegiatan" || pathname == "/artikel") {
       setFilterMobile(true);
     } else {
       setFilterMobile(false);
