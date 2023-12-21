@@ -11,7 +11,7 @@ export default function SearchBarEvent({ classValue }: { classValue?: string }) 
       <Image src={search} alt="search" className="sm:w-[20px] w-[12px]" />
       <input
         type="text"
-        className="sm:text-h5 text-h7 font-medium rounded-none outline-none placeholder:text-fontPrimary sm:w-[300px] sm:h-[40px] w-[100px] h-[25px]"
+        className="sm:text-h5 text-h7 font-medium rounded-none outline-none placeholder:text-fontPrimary sm:w-[200px] sm:h-[35px] w-[100px] h-[25px]"
         placeholder="Cari..."
       />
     </form>
