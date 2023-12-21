@@ -7,7 +7,6 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { SearchBar } from ".";
 import { FilterButton, FilterDropdown } from "./FilterDropdown";
-import { hamburger } from "@/public";
 
 export default function Nav() {
   const [view, setView] = useState(false);
