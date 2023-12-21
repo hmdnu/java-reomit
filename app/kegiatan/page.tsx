@@ -1,5 +1,6 @@
-import { FilterDropdown, EventCard, SearchBar } from "@/components";
+import { EventCard, SearchBar } from "@/components";
 import { eventCard } from "@/constant";
+import { FilterDropdown, FilterButton } from "@/components/FilterDropdown";
 
 export const metadata = {
   title: "Kegiatan",
@@ -13,10 +14,10 @@ export default function page() {
           <h1 className="text-h2 font-bold ">Event</h1>
           <SearchBar />
 
-          <FilterDropdown title={"Semua"}>
-            <button>Button 1</button>
-            <button>Button 2</button>
-            <button>Button 3</button>
+          <FilterDropdown classValue="h-[]" title={"Semua"}>
+            <FilterButton>Button 1</FilterButton>
+            <FilterButton>Button 2</FilterButton>
+            <FilterButton>Button 3</FilterButton>
           </FilterDropdown>
         </div>
 
