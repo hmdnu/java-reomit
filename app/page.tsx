@@ -1,4 +1,4 @@
-import { CarouselHome, CategoryCulture, ArticleCardHome, QuoteHomepage } from "@/components";
+import { ArticleCardHome, CarouselHome, CategoryCulture, QuoteHomepage } from "@/components";
 import { stats } from "@/constant";
 
 export const metadata = {
@@ -7,16 +7,16 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <main>
+    <main className="overflow-hidden">
       <CarouselHome />
       {/* stats */}
       <section>
-        <div className="flex">
+        <div className="flex w-full">
           {stats.map((stat, i) => (
-            <div className="w-full text-white" key={i}>
-              <div className={`${i % 2 == 0 ? "bg-themeGray" : "bg-themeRed"} p-[48px] w-full`}>
-                <h1 className="text-h1 font-bold mb-1">{stat.heading}</h1>
-                <h2 className="text-h4 font-bold">{stat.sub}</h2>
+            <div className="w-[200px] sm:w-full text-white" key={i}>
+              <div className={`${i % 2 == 0 ? "bg-themeGray" : "bg-themeRed"} p-[20px] sm:p-[48px] w-full`}>
+                <h1 className="text-h2 md:text-h1 font-bold mb-1">{stat.heading}</h1>
+                <h2 className="text-h7 md:text-h4 font-bold">{stat.sub}</h2>
               </div>
             </div>
           ))}

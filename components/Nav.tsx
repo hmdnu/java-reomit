@@ -1,11 +1,11 @@
 "use client";
 import { navLinks } from "@/constant";
-import { useEffect, useState } from "react";
+import { hamburger } from "@/public";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import Image from "next/image";
+import { useEffect, useState } from "react";
 import { SearchBar } from ".";
-import { hamburger } from "@/public";
 
 export default function Nav() {
   const [view, setView] = useState(false);

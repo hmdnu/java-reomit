@@ -22,10 +22,10 @@ import {
   ArticleCardTypes,
   ArticleDetail,
   CarouselHome,
+  CategoryBudayaTypes,
   EventCardDetailTypes,
   EventCardTypes,
   Stats,
-  CategoryBudayaTypes,
 } from "@/types";
 
 export const navLinks = [
@@ -138,7 +138,7 @@ export const categoryHome = [
   },
   {
     img: "",
-    heading: "Pertunjukkan Seni",
+    heading: "Berbagai Tradisi",
   },
   {
     img: "",
