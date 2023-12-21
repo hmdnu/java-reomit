@@ -1,5 +1,6 @@
 import CarouselDaftarBudaya from "@/components/daftarBudayaPage/CarouselDaftarBudaya";
-import { FilterDropdown, BudayaCategory } from "@/components";
+import { BudayaCategory } from "@/components";
+import { FilterButton, FilterDropdown } from "@/components/FilterDropdown";
 
 export const metadata = {
   title: "Budaya",
@@ -16,10 +17,10 @@ export default function DaftarBudaya() {
           </p>
         </div>
         <div className="flex items-center gap-8">
-          <FilterDropdown title={"Kabupaten/Kota"}>
-            <button>Button 1</button>
-            <button>Button 2</button>
-            <button>Button 3</button>
+          <FilterDropdown classValue="py-[10px] px-[10px]" title={"Kabupaten/Kota"}>
+            <FilterButton classValue="hover:bg-slate-500">Button 1</FilterButton>
+            <FilterButton classValue="hover:bg-slate-500">Button 1</FilterButton>
+            <FilterButton classValue="hover:bg-slate-500">Button 1</FilterButton>
           </FilterDropdown>
 
           <button className="w-[135px] py-[10px] rounded-[6px] bg-themeRed font-medium text-h5 text-white">Cari</button>

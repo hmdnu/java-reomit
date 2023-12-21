@@ -6,11 +6,13 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { SearchBar } from ".";
+import { FilterButton, FilterDropdown } from "./FilterDropdown";
 
 export default function Nav() {
   const [view, setView] = useState(false);
   const [navBg, setNavBg] = useState(true);
   const [searchBarNav, setSearchBarNav] = useState(false);
+  const [filterMobile, setFilterMobile] = useState(false);
   const [mobileView, setMobileView] = useState(false);
 
   const pathname = usePathname();
@@ -26,18 +28,23 @@ export default function Nav() {
   }
 
   useEffect(() => {
+    // navBg
+    if (pathname !== "/") {
+      setNavBg(false);
+    } else {
+      setNavBg(true);
+    }
+
     if (pathname == "/artikel" || pathname == "/galeri") {
       setSearchBarNav(true);
     } else {
       setSearchBarNav(false);
     }
-  }, [pathname]);
 
-  useEffect(() => {
-    if (pathname !== "/") {
-      setNavBg(false);
+    if (pathname == "/galeri" || pathname == "/kegiatan" || pathname == "/artikel") {
+      setFilterMobile(true);
     } else {
-      setNavBg(true);
+      setFilterMobile(false);
     }
   }, [pathname]);
 
@@ -56,7 +63,7 @@ export default function Nav() {
           <Link href={"/"} className="sm:text-h3 text-h4 font-semibold">
             Java Reomit.
           </Link>
-          {searchBarNav ? <SearchBar /> : null}
+          <div className="sm:block hidden">{searchBarNav ? <SearchBar /> : null}</div>
         </div>
 
         <div className="gap-[30px] sm:flex hidden">
@@ -90,6 +97,17 @@ export default function Nav() {
             ))}
           </div>
         </div>
+      </div>
+
+      <div className="sm:hidden flex items-center m-auto w-[90%] mt-[20px] gap-5 ">
+        {searchBarNav ? <SearchBar /> : null}
+        {filterMobile ? (
+          <FilterDropdown classValue="text-h7 rounded-[5px] h-[27px] px-4" title={"Kesenian"}>
+            <FilterButton classValue="text-h7">Button 1</FilterButton>
+            <FilterButton classValue="text-h7">Button 2</FilterButton>
+            <FilterButton classValue="text-h7">Button 3</FilterButton>
+          </FilterDropdown>
+        ) : null}
       </div>
     </nav>
   );
