@@ -13,7 +13,6 @@ import QuoteHomepage from "./homePage/QuoteHomepage";
 import EventCard from "./kegiatanPage/EventCard";
 import EventDetailSeeMore from "./kegiatanPage/EventDetailSeeMore";
 import EventDetailShedule from "./kegiatanPage/EventDetailShedule";
-import FilterDropdown from "./FilterDropdown";
 import AsideEventDetail from "./kegiatanPage/AsideEventDetail";
 import SearchBar from "./SearchBar";
 import BudayaCategory from "./daftarBudayaPage/BudayaCategory";
@@ -30,7 +29,6 @@ export {
   EventCard,
   EventDetailSeeMore,
   EventDetailShedule,
-  FilterDropdown,
   Footer,
   Gallery,
   Nav,

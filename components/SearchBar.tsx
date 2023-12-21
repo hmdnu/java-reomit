@@ -2,16 +2,16 @@
 import { search } from "@/public";
 import Image from "next/image";
 
-export default function SearchBarEvent() {
+export default function SearchBarEvent({ classValue }: { classValue?: string }) {
   return (
     <form
       onSubmit={(e) => e.preventDefault()}
-      className="flex gap-[10px] border rounded-[10px] border-fontSecondary w-[300px] h-[40px] items-center px-[24px]"
+      className="flex gap-[10px] border sm:rounded-[10px] rounded-[5px] border-fontSecondary items-center sm:px-[24px] px-[18px]"
     >
-      <Image src={search} alt="search" width={20} />
+      <Image src={search} alt="search" className="sm:w-[20px] w-[12px]" />
       <input
         type="text"
-        className="text-h5 font-medium rounded-none outline-none placeholder:text-fontPrimary"
+        className="sm:text-h5 text-h7 font-medium rounded-none outline-none placeholder:text-fontPrimary sm:w-[300px] sm:h-[40px] w-[100px] h-[25px]"
         placeholder="Cari..."
       />
     </form>
