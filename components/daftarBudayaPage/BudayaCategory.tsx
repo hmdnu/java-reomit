@@ -12,7 +12,7 @@ export default function BudayaCategory() {
   }
 
   return (
-    <div className="mt-20">
+    <div className="mt-5 sm:mt-20">
       {/* navigation */}
       <div className="flex justify-center items-center gap-5">
         {budayaCategory.map((name, i) => (
