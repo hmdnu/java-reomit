@@ -1,6 +1,6 @@
 "use client";
 import { useRef, useState } from "react";
-import { DaftarKesenian, DaftarKuliner, DaftarTradisi } from "..";
+import { DaftarKesenian, DaftarKuliner, DaftarTradisi } from "./categoryBudaya";
 
 export default function BudayaCategory() {
   const [category, setCategory] = useState("Kesenian");
