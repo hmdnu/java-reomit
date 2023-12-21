@@ -5,10 +5,11 @@ import { useEffect, useRef, useState } from "react";
 
 interface Props {
   title: string | number;
-  children: Array<JSX.Element>;
+  children: Array<JSX.Element> | JSX.Element;
+  classValue?: string;
 }
 
-export default function FilterDropdown({ title, children }: Props) {
+export default function FilterDropdown({ title, children, classValue }: Props) {
   const [dropDown, isDropDown] = useState(false);
   const dropDownContainer = useRef<HTMLDivElement>(null);
 
@@ -29,20 +30,20 @@ export default function FilterDropdown({ title, children }: Props) {
   return (
     <div className="relative z-10">
       <div>
-        <button
+        <div
           id="drop-btn"
           onClick={() => isDropDown((prev) => !prev)}
-          className="border rounded-[10px] border-fontSecondary font-medium text-h5 px-[13px] py-[8px] flex gap-8 items-center"
+          className={`cursor-pointer border rounded-[10px] border-fontSecondary font-medium flex gap-8 items-center ${classValue}`}
         >
           {title}
           <Image
             id="arrow-btn"
             src={arrDown}
             alt="arrow down"
-            width={12}
+            width={10}
             className={`${dropDown ? "rotate-180" : "rotate-0"}`}
           />
-        </button>
+        </div>
       </div>
 
       {/* dropdown container */}
@@ -50,7 +51,7 @@ export default function FilterDropdown({ title, children }: Props) {
         <div
           ref={dropDownContainer}
           id="container-dropdown"
-          className="bg-white border rounded-[6px] px-[13px] py-[10px] mt-3 border-fontSecondary w-full flex gap-5 flex-col absolute"
+          className="w-full bg-white border rounded-[6px] px-[13px] py-[10px] mt-3 border-fontSecondary flex gap-5 flex-col absolute"
         >
           {children}
         </div>
