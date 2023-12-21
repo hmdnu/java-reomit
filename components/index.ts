@@ -2,11 +2,9 @@ import Footer from "./Footer";
 import Nav from "./Nav";
 import ArticleCard from "./artikelPage/ArticleCard";
 import ArticleContent from "./artikelPage/ArticleContent";
-import DaftarBudaya from "./daftarBudayaPage/DaftarBudaya";
-import DaftarKesenian from "./daftarBudayaPage/DaftarKesenian";
-import DaftarKuliner from "./daftarBudayaPage/DaftarKuliner";
-import DaftarTradisi from "./daftarBudayaPage/DaftarTradisi";
-import FilterDaftarBudaya from "./daftarBudayaPage/FilterDaftarBudaya";
+import DaftarKesenian from "./daftarBudayaPage/categoryBudaya/DaftarKesenian";
+import DaftarKuliner from "./daftarBudayaPage/categoryBudaya/DaftarKuliner";
+import DaftarTradisi from "./daftarBudayaPage/categoryBudaya/DaftarTradisi";
 import Gallery from "./galeriPage/Gallery";
 import ArticleCardHome from "./homePage/ArticleCardHome";
 import CarouselHome from "./homePage/CarouselHome";
@@ -15,9 +13,10 @@ import QuoteHomepage from "./homePage/QuoteHomepage";
 import EventCard from "./kegiatanPage/EventCard";
 import EventDetailSeeMore from "./kegiatanPage/EventDetailSeeMore";
 import EventDetailShedule from "./kegiatanPage/EventDetailShedule";
-import FilterDropdownEvent from "./kegiatanPage/FilterDropdownEvent";
+import FilterDropdown from "./FilterDropdown";
 import AsideEventDetail from "./kegiatanPage/AsideEventDetail";
-import SearchBarEvent from "./SearchBar";
+import SearchBar from "./SearchBar";
+import BudayaCategory from "./daftarBudayaPage/BudayaCategory";
 
 export {
   ArticleCard,
@@ -25,19 +24,18 @@ export {
   ArticleContent,
   CarouselHome,
   CategoryCulture,
-  DaftarBudaya,
   DaftarKesenian,
   DaftarKuliner,
   DaftarTradisi,
   EventCard,
   EventDetailSeeMore,
   EventDetailShedule,
-  FilterDaftarBudaya,
-  FilterDropdownEvent,
+  FilterDropdown,
   Footer,
   Gallery,
   Nav,
   AsideEventDetail,
   QuoteHomepage,
-  SearchBarEvent,
+  SearchBar,
+  BudayaCategory,
 };

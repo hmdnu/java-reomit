@@ -3,7 +3,12 @@ import { arrDown } from "@/public";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
-export default function FilterDropdownEvent() {
+interface Props {
+  title: string | number;
+  children: Array<JSX.Element>;
+}
+
+export default function FilterDropdown({ title, children }: Props) {
   const [dropDown, isDropDown] = useState(false);
   const dropDownContainer = useRef<HTMLDivElement>(null);
 
@@ -22,14 +27,14 @@ export default function FilterDropdownEvent() {
   }, []);
 
   return (
-    <div className="relative">
+    <div className="relative z-10">
       <div>
         <button
           id="drop-btn"
           onClick={() => isDropDown((prev) => !prev)}
-          className="border rounded-[10px] border-fontSecondary font-medium text-h5 px-[13px] py-[10px] flex gap-8 items-center"
+          className="border rounded-[10px] border-fontSecondary font-medium text-h5 px-[13px] py-[8px] flex gap-8 items-center"
         >
-          Semua
+          {title}
           <Image
             id="arrow-btn"
             src={arrDown}
@@ -47,9 +52,7 @@ export default function FilterDropdownEvent() {
           id="container-dropdown"
           className="bg-white border rounded-[6px] px-[13px] py-[10px] mt-3 border-fontSecondary w-full flex gap-5 flex-col absolute"
         >
-          <button>button 1</button>
-          <button>button 2</button>
-          <button>button 3</button>
+          {children}
         </div>
       ) : null}
     </div>

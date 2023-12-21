@@ -6,7 +6,6 @@ import { carouselHome } from "@/constant";
 export default function CarouselHome() {
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 1,
     },
@@ -23,6 +22,7 @@ export default function CarouselHome() {
       items: 1,
     },
   };
+
   return (
     <div>
       <Carousel
