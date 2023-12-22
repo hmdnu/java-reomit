@@ -1,4 +1,4 @@
-import { quote } from "@/public";
+import { quote } from "@/public/images/beranda";
 import Image from "next/image";
 
 export default function QuoteHomepage() {

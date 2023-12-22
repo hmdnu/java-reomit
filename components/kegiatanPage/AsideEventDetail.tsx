@@ -1,4 +1,4 @@
-import { iconIg, iconLink, iconWa } from "@/public";
+import { iconIg, iconLink, iconWa } from "@/public/icons";
 import Image from "next/image";
 import Link from "next/link";
 
