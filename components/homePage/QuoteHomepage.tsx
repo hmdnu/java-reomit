@@ -11,7 +11,7 @@ export default function QuoteHomepage() {
             <div className="relative w-fit px-12 py-7">
               <Image src={quote} width={40} height={40} alt="quote" className="absolute top-0 left-0" />
               <span>
-                <h1 className="text-h6 md:text-h1 font-bold text-white w-[120px] md:w-[500px] my-3">
+                <h1 className="text-h6 sm:text-h3 md:text-h1 font-bold text-white w-[120px] sm:w-[300px] md:w-[500px] my-3">
                   Esensi dari kebudayaan adalah Menghormati
                 </h1>
               </span>

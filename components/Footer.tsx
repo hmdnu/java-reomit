@@ -1,19 +1,21 @@
 import { navLinks } from "@/constant";
-import { iconIg, iconYt, iconWa } from "@/public";
-import Link from "next/link";
+import { iconIg, iconWa, iconYt } from "@/public";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
     <footer className="bg-white w-full sm:h-[180px] h-[100px] flex items-center justify-center">
       <div className="w-[90%] m-auto flex justify-between items-center">
         <div>
-          <h1 className="font-bold sm:text-[50px] sm:leading-[120%] text-h5 text-fontPrimary mb-2">Java Reomit.</h1>
-          <p className="font-medium text-fontPrimary sm:text-h6 text-h8">© All Rights Reserved. Java Reomit 2023</p>
+          <h1 className="font-bold sm:text-h3 md:text-[50px] sm:leading-[120%] text-h5 text-fontPrimary mb-2">
+            Java Reomit.
+          </h1>
+          <p className="font-medium text-fontPrimary md:text-h6 text-h8">© All Rights Reserved. Java Reomit 2023</p>
         </div>
-        <div className="sm:flex hidden justify-between gap-[50px]">
+        <div className="sm:grid sm:grid-cols-2 md:flex hidden justify-between sm:gap-1 md:gap-[50px]">
           {navLinks.map((link, i) => (
-            <Link key={i} className="text-h5 font-medium" href={link.link}>
+            <Link key={i} className="text-h5 font-medium sm:mx-5" href={link.link}>
               {link.name}
             </Link>
           ))}
