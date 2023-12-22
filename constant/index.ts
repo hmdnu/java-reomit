@@ -115,16 +115,16 @@ export const carouselHome: CarouselHome[] = [
 
 export const stats: Stats[] = [
   {
-    heading: "80",
-    sub: "Situs Budaya",
+    heading: "8",
+    sub: "Tradisi",
   },
   {
-    heading: "80",
-    sub: "Situs Budaya",
+    heading: "20",
+    sub: "Kesenian",
   },
   {
-    heading: "80",
-    sub: "Situs Budaya",
+    heading: "21",
+    sub: "Kuliner",
   },
 ];
 
