@@ -18,6 +18,7 @@ const config: Config = {
         carousel2: "url('/images/carousel2.png')",
         carousel3: "url('/images/carousel3.jpeg')",
         quoteImg: "url('/images/quoteImg.png')",
+        bannerEvent: "url('/images/TARI-MUANG-SANGKAL-SUMENEP.jpg')",
       },
       fontSize: {
         h1: ["40px", { lineHeight: "120%" }],
