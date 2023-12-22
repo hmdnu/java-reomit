@@ -4,7 +4,6 @@ import Image from "next/image";
 
 export default function ArticleContent({ articleTitle }: { articleTitle: string }) {
   const articles = articleDetail.filter((article) => article.title === articleTitle);
-  console.log(articleTitle);
 
   return (
     <div>
@@ -18,7 +17,7 @@ export default function ArticleContent({ articleTitle }: { articleTitle: string 
           <div className="sm:w-[68%] w-[75%] m-auto mb-[60px] flex flex-col gap-[20px] sm:gap-[36px]">
             <h1 className="sm:text-h2 text-h5 font-bold">{article.title}</h1>
             <div className="flex gap-3">
-              <Image src={article.imgAuthor} width={40} height={40} alt="profile" className="rounded-full" />
+              <Image src={article.imgAuthor} alt="profile" className="rounded-full w-[40px] h-[40px] object-cover" />
               <div>
                 <div className="flex gap-1">
                   <h3 className="text-h6 font-semibold">{article.author}</h3>
