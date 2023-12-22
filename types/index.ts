@@ -15,9 +15,6 @@ export interface ArticleCardTypes {
   contentPreview?: string;
   img: StaticImageData;
   imgAlt: string;
-  detail?: {
-    tag?: [string];
-  };
 }
 
 export interface ArticleDetail extends ArticleCardTypes {

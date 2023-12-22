@@ -24,7 +24,7 @@ export default function CarouselHome() {
   };
 
   return (
-    <div>
+    <div className="w-full h-[500px] sm:h-screen">
       <Carousel
         removeArrowOnDeviceType={["superLargeDesktop", "desktop", "tablet", "mobile"]}
         infinite={true}

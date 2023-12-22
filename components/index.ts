@@ -17,6 +17,7 @@ import EventCard from "./kegiatanPage/EventCard";
 import EventDetailSeeMore from "./kegiatanPage/EventDetailSeeMore";
 import EventDetailShedule from "./kegiatanPage/EventDetailShedule";
 import SignInCard from "./registrasiPage/SignInCard";
+import Stats from "./homePage/Stats";
 
 export {
   ArticleCard,
@@ -38,4 +39,5 @@ export {
   QuoteHomepage,
   SearchBar,
   SignInCard,
+  Stats,
 };
