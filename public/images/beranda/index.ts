@@ -9,4 +9,8 @@ import tradisi from "./kategori/tradisi.jpeg";
 import quote from "./quote.png";
 import quoteImg from "./quoteImg.png";
 
-export { jaranKepang, kasada, kesenian, kuliner, quote, quoteImg, tariRemo, tradisi };
+import banner1 from "./carousel/banner1.png";
+import banner2 from "./carousel/banner2.png";
+import banner3 from "./carousel/banner3.png";
+
+export { banner1, banner2, banner3, jaranKepang, kasada, kesenian, kuliner, quote, quoteImg, tariRemo, tradisi };

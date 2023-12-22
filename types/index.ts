@@ -1,9 +1,7 @@
 import { StaticImageData } from "next/image";
 
 export interface CarouselHome {
-  name: string;
-  heading: string;
-  paragraph: string;
+  img: StaticImageData;
 }
 
 export interface ArticleCardTypes {
