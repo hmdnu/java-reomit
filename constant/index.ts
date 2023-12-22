@@ -182,15 +182,15 @@ export const articleDetail: ArticleDetail[] = [
 
 export const categoryHome = [
   {
-    img: kesenian,
+    img: "/images/beranda/kategori/kesenian.jpeg",
     heading: "Ragam Kesenian",
   },
   {
-    img: tradisi,
+    img: "/images/beranda/kategori/tradisi.jpeg",
     heading: "Berbagai Tradisi",
   },
   {
-    img: kuliner,
+    img: "/images/beranda/kategori/kuliner.jpeg",
     heading: "Kuliner Otentik",
   },
 ];

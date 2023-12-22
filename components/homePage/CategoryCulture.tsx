@@ -14,7 +14,8 @@ export default function CategoryCulture() {
         {categoryHome.map((category, i) => (
           <div
             key={i}
-            className={`w-full md:w-[448px] h-[160px] md:h-[209.5px] bg-right rounded-[20px] bg-carousel1 bg-cover`}
+            style={{ backgroundImage: `url(${category.img})` }}
+            className={`w-full md:w-[448px] h-[160px] md:h-[209.5px] bg-right rounded-[20px] bg-cover`}
           >
             <div className="w-full md:w-[448px] h-[160px] md:h-[209.5px] bg-[rgba(0,0,0,.3)] rounded-[20px] grid place-content-center">
               <h1 className="font-bold text-h5 text-center sm:text-h3 p-5 text-white">{category.heading}</h1>
