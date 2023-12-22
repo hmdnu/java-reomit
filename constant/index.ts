@@ -1,23 +1,30 @@
-import {
-  carousel1,
-  carousel2,
-  carousel3,
-  jaranKepang,
-  karapanSapi,
-  kasada,
-  keboan,
-  kedukBeji,
-  larungSembonyo,
-  lontongBalap,
-  ludruk,
-  profile,
-  rawon,
-  reog,
-  rujak,
-  soto,
-  tariGandrung,
-  tariRemo,
-} from "@/public";
+// import {
+//   carousel1,
+//   carousel2,
+//   carousel3,
+//   jaranKepang,
+//   karapanSapi,
+//   kasada,
+//   keboan,
+//   kedukBeji,
+//   larungSembonyo,
+//   lontongBalap,
+//   ludruk,
+//   profile,
+//   rawon,
+//   reog,
+//   rujak,
+//   soto,
+//   tariGandrung,
+//   tariRemo,
+// } from "@/public";
+
+import { jaranKepang, kasada, profile1, profile2, profile3, tariRemo } from "@/public/images/artikel";
+
+import { kesenian, kuliner, tradisi } from "@/public/images/beranda";
+
+import { reog } from "@/public";
+
 import {
   ArticleCardTypes,
   ArticleDetail,
@@ -83,25 +90,36 @@ export const stats: Stats[] = [
 
 export const articleCards: ArticleCardTypes[] = [
   {
-    imgAuthor: profile,
+    imgAuthor: profile1,
     author: "John Doe",
     date: "• Agustus 2023",
     category: "Kesenian",
     title: "Sejarah Pertunjukan Reog Ponorogo dikalangan Masyarakat Jawa Timur",
     contentPreview:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt placeat quod voluptates, laborum magni ipsum cupiditate aliquid totam aut optio incidunt expedita debitis libero, consequuntur eligendi odit adipisci dolorum officiis.",
-    img: carousel1,
+    img: jaranKepang,
     imgAlt: "karapan-sapi",
   },
   {
-    imgAuthor: profile,
+    imgAuthor: profile2,
     author: "Lavina",
     date: "• Agustus 2023",
     category: "Kuliner",
     title: "Daya Tarik Kesenian Bantengan Terhadap Masyarakat di Berbagai Kalangan Usia",
     contentPreview:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt placeat quod voluptates, laborum magni ipsum cupiditate aliquid totam aut optio incidunt expedita debitis libero, consequuntur eligendi odit adipisci dolorum officiis.",
-    img: carousel2,
+    img: kasada,
+    imgAlt: "karapan-sapi",
+  },
+  {
+    imgAuthor: profile3,
+    author: "Lavina",
+    date: "• Agustus 2023",
+    category: "Kuliner",
+    title: "Daya Tarik Kesenian Bantengan Terhadap Masyarakat di Berbagai Kalangan Usia",
+    contentPreview:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt placeat quod voluptates, laborum magni ipsum cupiditate aliquid totam aut optio incidunt expedita debitis libero, consequuntur eligendi odit adipisci dolorum officiis.",
+    img: tariRemo,
     imgAlt: "karapan-sapi",
   },
 ];
@@ -133,15 +151,15 @@ export const articleDetail: ArticleDetail[] = [
 
 export const categoryHome = [
   {
-    img: "",
+    img: kesenian,
     heading: "Ragam Kesenian",
   },
   {
-    img: "",
+    img: tradisi,
     heading: "Berbagai Tradisi",
   },
   {
-    img: "",
+    img: kuliner,
     heading: "Kuliner Otentik",
   },
 ];
