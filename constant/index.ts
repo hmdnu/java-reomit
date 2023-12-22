@@ -31,6 +31,7 @@ import {
   tariRemo,
   tradisi,
 } from "@/public/images/beranda";
+
 import {
   karapanSapi,
   keboan,
@@ -44,7 +45,31 @@ import {
   soto,
 } from "@/public/images/budaya";
 
-import { tariGandrung } from "@/public/images/galeri";
+import {
+  ayamLodho,
+  bakso,
+  bebek,
+  brem,
+  bujangGanong,
+  gethuk,
+  gulatOkol,
+  jaranBodhag,
+  jaranJenggo,
+  jaranPegon,
+  krengseng,
+  manten,
+  nyadran,
+  sate,
+  tahuCampur,
+  tahuTek,
+  tariAmbarang,
+  tariBeskalan,
+  tariBruto,
+  tariGandrung,
+  tariKuntulan,
+  undukan,
+  yadyna,
+} from "@/public/images/galeri";
 
 import { carousel1 } from "@/public/images";
 
@@ -397,6 +422,42 @@ export const categoryBudaya: CategoryBudayaTypes = {
 export const gallery = {
   kuliner: [
     {
+      img: ayamLodho,
+      altImg: "ayamlodho",
+    },
+    {
+      img: bakso,
+      altImg: "bakso",
+    },
+    {
+      img: bebek,
+      altImg: "bebek",
+    },
+    {
+      img: brem,
+      altImg: "brem",
+    },
+    {
+      img: gethuk,
+      altImg: "gethuk",
+    },
+    {
+      img: krengseng,
+      altImg: "krengseng",
+    },
+    {
+      img: sate,
+      altImg: "sate",
+    },
+    {
+      img: tahuCampur,
+      altImg: "tahuCampur",
+    },
+    {
+      img: tahuTek,
+      altImg: "tahuTek",
+    },
+    {
       img: soto,
       altImg: "soto",
     },
@@ -418,6 +479,42 @@ export const gallery = {
     {
       img: jaranKepang,
       altImg: "JaranKepang",
+    },
+    {
+      img: bujangGanong,
+      altImg: "bujangGanong",
+    },
+    {
+      img: gulatOkol,
+      altImg: "gulatOkol",
+    },
+    {
+      img: jaranBodhag,
+      altImg: "jaranBodhag",
+    },
+    {
+      img: jaranJenggo,
+      altImg: "jaranJenggo",
+    },
+    {
+      img: jaranPegon,
+      altImg: "jaranPegon",
+    },
+    {
+      img: tariAmbarang,
+      altImg: "tariAmbarang",
+    },
+    {
+      img: tariBeskalan,
+      altImg: "tariBeskalan",
+    },
+    {
+      img: tariKuntulan,
+      altImg: "tariKuntulan",
+    },
+    {
+      img: tariBruto,
+      altImg: "tariBruto",
     },
     {
       img: karapanSapi,
@@ -445,6 +542,22 @@ export const gallery = {
     {
       img: kasada,
       altImg: "kasada",
+    },
+    {
+      img: undukan,
+      altImg: "undukan",
+    },
+    {
+      img: nyadran,
+      altImg: "nyadran",
+    },
+    {
+      img: yadyna,
+      altImg: "yadyna",
+    },
+    {
+      img: manten,
+      altImg: "manten",
     },
     {
       img: keboan,
