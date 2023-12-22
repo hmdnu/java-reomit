@@ -1,19 +1,29 @@
-"use client";
-
 import React from "react";
 import { gallery } from "@/constant";
 import Image, { StaticImageData } from "next/image";
 import { iconDownload } from "@/public";
-import { Tradisi, Kesenian, Kuliner } from "@/components/galeriPage/budaya";
-import { usePathname } from "next/navigation";
+import { RecomendCategory } from "@/components/galeriPage/budaya";
 
 interface imgProps {
   img: StaticImageData;
   altImg: string;
 }
 
+interface props {
+  params: {
+    detail: string;
+  };
+}
+
+export function generateMetadata({ params }: props) {
+  const title = decodeURIComponent(params.detail).split(",").join(" | ");
+
+  return {
+    title,
+  };
+}
+
 export default function Page({ params }: { params: { detail: string } }) {
-  const pathname = usePathname();
   const imgName = params.detail[1];
 
   const kuliner = gallery.kuliner?.find((e) => e.altImg === imgName);
@@ -37,12 +47,7 @@ export default function Page({ params }: { params: { detail: string } }) {
           </div>
         ))}
       </div>
-      <div className="w-[80%] mx-auto mt-24">
-        <h1 className="text-center font-semibold text-h4 mb-10">Lihat Yang Lain</h1>
-        {pathname === "/galeri/kuliner/" + imgName && <Kuliner />}
-        {pathname === "/galeri/tradisi/" + imgName && <Tradisi />}
-        {pathname === "/galeri/kesenian/" + imgName && <Kesenian />}
-      </div>
+      <RecomendCategory imgName={imgName} />
     </section>
   );
 }
