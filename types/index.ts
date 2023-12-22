@@ -55,17 +55,20 @@ export interface CategoryBudayaTypes {
     img: StaticImageData;
     altImg: string;
     title: string;
+    content: string;
   }[];
 
   tradisi: {
     img: StaticImageData;
     altImg: string;
     title: string;
+    content: string;
   }[];
 
   kesenian: {
     img: StaticImageData;
     altImg: string;
     title: string;
+    content: string;
   }[];
 }
