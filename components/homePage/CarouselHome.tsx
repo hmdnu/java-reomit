@@ -25,7 +25,7 @@ export default function CarouselHome() {
   };
 
   return (
-    <div className="w-full h-[150px] md:h-screen mt-20">
+    <div className="mt-20">
       <Carousel
         removeArrowOnDeviceType={["superLargeDesktop", "desktop", "tablet", "mobile"]}
         infinite={true}
@@ -36,15 +36,12 @@ export default function CarouselHome() {
         draggable={false}
       >
         {carouselHome.map((carousel, i) => (
-          <div key={i} className={`${carousel.img} bg-contain w-full md:h-screen flex items-center`}>
-            <Image src={carousel.img} alt="banner"></Image>
-            {/* <div className="w-[80%] m-auto">
-              <div className="w-full sm:w-[80%] md:w-[55%]">
-                <h1 className="text-h5 sm:text-h2 font-bold mb-5">{carousel.heading}</h1>
-                <p className="text-h7 sm:text-h5 font-normal">{carousel.paragraph}</p>
-              </div>
-            </div> */}
-          </div>
+          <Image
+            key={i}
+            src={carousel.img}
+            alt="banner"
+            className={`${carousel.img} bg-contain w-full flex items-center`}
+          />
         ))}
       </Carousel>
     </div>

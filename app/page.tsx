@@ -7,8 +7,10 @@ export const metadata = {
 export default function Home() {
   return (
     <main className="w-full overflow-hidden">
-      <CarouselHome />
-      <Stats />
+      <div>
+        <CarouselHome />
+        <Stats />
+      </div>
       <CategoryCulture />
       <QuoteHomepage />
       <ArticleCardHome />
