@@ -20,17 +20,7 @@
 // } from "@/public";
 
 import { profile1, profile2, profile3 } from "@/public/images/artikel";
-import {
-  banner1,
-  banner2,
-  banner3,
-  jaranKepang,
-  kasada,
-  kesenian,
-  kuliner,
-  tariRemo,
-  tradisi,
-} from "@/public/images/beranda";
+import { banner1, banner2, banner3, jaranKepang, kasada, tariRemo } from "@/public/images/beranda";
 
 import {
   karapanSapi,
@@ -67,11 +57,10 @@ import {
   tariBruto,
   tariGandrung,
   tariKuntulan,
+  tariMuang,
   undukan,
   yadyna,
 } from "@/public/images/galeri";
-
-import { carousel1 } from "@/public/images";
 
 import {
   ArticleCardTypes,
@@ -226,42 +215,42 @@ export const eventCard: EventCardTypes[] = [
     date: "10 Des 2023",
     time: "09.00 WIB",
     location: "Gedung Graha Cakrawala, Universitas Negeri Malang, Sumbersari, Kec. Lowokwaru",
-    imgPath: carousel1,
+    imgPath: tariMuang,
   },
   {
     title: "Festival Budaya Nusantara (FBN) VI Tahun 2023",
     date: "10 Des 2023",
     time: "09.00 WIB",
     location: "Gedung Graha Cakrawala, Universitas Negeri Malang, Sumbersari, Kec. Lowokwaru",
-    imgPath: carousel1,
+    imgPath: tariMuang,
   },
   {
     title: "Festival Budaya Nusantara (FBN) VI Tahun 2023",
     date: "10 Des 2023",
     time: "09.00 WIB",
     location: "Gedung Graha Cakrawala, Universitas Negeri Malang, Sumbersari, Kec. Lowokwaru",
-    imgPath: carousel1,
+    imgPath: tariMuang,
   },
   {
     title: "Festival Budaya Nusantara (FBN) VI Tahun 2023",
     date: "10 Des 2023",
     time: "09.00 WIB",
     location: "Gedung Graha Cakrawala, Universitas Negeri Malang, Sumbersari, Kec. Lowokwaru",
-    imgPath: carousel1,
+    imgPath: tariMuang,
   },
   {
     title: "Festival Budaya Nusantara (FBN) VI Tahun 2023",
     date: "10 Des 2023",
     time: "09.00 WIB",
     location: "Gedung Graha Cakrawala, Universitas Negeri Malang, Sumbersari, Kec. Lowokwaru",
-    imgPath: carousel1,
+    imgPath: tariMuang,
   },
   {
     title: "Festival Budaya Nusantara (FBN) VI Tahun 2023",
     date: "10 Des 2023",
     time: "09.00 WIB",
     location: "Gedung Graha Cakrawala, Universitas Negeri Malang, Sumbersari, Kec. Lowokwaru",
-    imgPath: carousel1,
+    imgPath: tariMuang,
   },
 ];
 
