@@ -1,7 +1,7 @@
 "use client";
+import { schedule } from "@/constant";
 import { EventCardDetailTypes } from "@/types";
 import { useRef, useState } from "react";
-import { schedule } from "@/constant";
 import { JadwalAcara, RincianTambahan, Sponsor } from "./schedule";
 
 export default function EventDetailShedule({ event }: { event: EventCardDetailTypes }) {
@@ -14,8 +14,8 @@ export default function EventDetailShedule({ event }: { event: EventCardDetailTy
     setScheduleBtn(buttonRef.current[index]?.innerHTML ?? "");
   }
   return (
-    <div className="mt-[77px]">
-      <div className="border-b pb-[14px] border-[#C0C0C0] text-h4 font-bold text-fontBlue flex gap-[62px]">
+    <div className="mt-6 md:mt-[77px]">
+      <div className="border-b pb-[14px] w-[300px] md:w-full border-[#C0C0C0] text-h6 md:text-h4 font-bold text-fontBlue flex gap-12 md:gap-[62px]">
         {schedule.map((item, i) => (
           <button
             key={i}
