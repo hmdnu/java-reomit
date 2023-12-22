@@ -4,8 +4,8 @@ export default function JadwalAcara({ event }: { event: EventCardDetailTypes }) 
   const lastIndex = event.eventShedule.length - 1;
 
   return (
-    <div className="mt-[43px]">
-      <h1 className="text-h4 font-medium">Jadwal Acara</h1>
+    <div className="mt-6 md:mt-[43px]">
+      <h1 className="text-h6 md:text-h4 font-medium">Jadwal Acara</h1>
       <div className="mt-[35px] pl-3">
         {event.eventShedule.map((event, i) => (
           <div key={i} className="flex gap-5">
@@ -16,8 +16,8 @@ export default function JadwalAcara({ event }: { event: EventCardDetailTypes }) 
               }`}
             ></div>
             <div className="text-fontBlue">
-              <h1 className="text-h5 font-bold">{event.name}</h1>
-              <h2 className="text-h7 font-normal">
+              <h1 className="text-h6 md:text-h5 font-bold">{event.name}</h1>
+              <h2 className="text-h7 md:text-h7 font-normal">
                 {event.startTime} - {event.endTime} WIB
               </h2>
             </div>
