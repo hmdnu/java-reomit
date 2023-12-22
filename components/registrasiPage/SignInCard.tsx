@@ -1,16 +1,18 @@
-import { reog } from "@/public/images/budaya";
+"use client";
+import { reog1 } from "@/public";
 import Image from "next/image";
 
 export default function SignInCard() {
   return (
-    <div className="flex mt-32">
+    <div className="flex mt-32 md:mt-0">
       <div className="flex sm:m-auto sm:w-[500px] sm:h-[500px]">
         <div className="p-5 absolute sm:relative bg-white bg-opacity-50">
           <h1 className="text-h3 md:text-h2  font-semibold text-black">Registrasi</h1>
           <p className="text-h6 md:text-h5 text-black  font-medium mb-10">
             Untuk Menikmati Pertunjukkan Seni yang Anda Inginkan
           </p>
-          <form>
+          <form onSubmit={(e) => e.preventDefault()}>
+            {" "}
             <div className="mb-5">
               <input
                 type="email"
@@ -37,7 +39,7 @@ export default function SignInCard() {
         </div>
       </div>
       <div>
-        <Image src={reog} alt="reog" className="sm:rounded-lg"></Image>
+        <Image src={reog1} alt="reog" className="md:rounded-lg"></Image>
       </div>
     </div>
   );
