@@ -51,17 +51,7 @@ export default function Page({ params }: { params: { slug: string } }) {
                 <h4 className="text-h7 text-themeRed">{categoryName}</h4>
               </div>
             </div>
-            <p className="text-h5 mt-5 text-justify">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum vel esse, doloribus expedita delectus
-              tempora natus similique! Ipsam quibusdam, molestias quasi omnis modi autem placeat optio sapiente possimus
-              id, ut harum. Soluta perspiciatis autem minus, tempore magni maxime obcaecati qui eius recusandae! Saepe
-              doloribus eveniet ipsa, nemo labore aperiam modi ratione, placeat, recusandae reprehenderit odit dolor.
-              Minima, vitae! Quasi, magni aperiam officia praesentium reiciendis quos enim iusto totam odit, accusantium
-              numquam laboriosam cupiditate consequuntur fuga vitae veritatis delectus! Quos, quam doloremque numquam
-              pariatur culpa deserunt exercitationem aut ut dolorum. Dolorum incidunt fugit consequatur deleniti
-              voluptatum itaque nemo iusto officiis natus odit. Eligendi suscipit molestiae modi quod, est tempore,
-              explicabo nostrum illo ipsa similique fugiat blanditiis doloribus sit nobis possimus magni.
-            </p>
+            <p className="text-h5 mt-5 text-justify">{category?.content}</p>
           </div>
         </div>
       ))}
