@@ -6,7 +6,7 @@ export default function SearchBarEvent({ classValue }: { classValue?: string }) 
   return (
     <form
       onSubmit={(e) => e.preventDefault()}
-      className="flex gap-[10px] border sm:rounded-[10px] rounded-[10px] border-fontSecondary items-center sm:px-[24px] py-2 px-[18px]"
+      className="flex gap-[10px] border sm:rounded-[10px] rounded-[10px] border-fontSecondary items-center sm:px-[24px] py-0 px-[18px]"
     >
       <Image src={search} alt="search" className="sm:w-[20px] w-[12px]" />
       <input

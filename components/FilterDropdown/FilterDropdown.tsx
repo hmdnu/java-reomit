@@ -29,21 +29,19 @@ export default function FilterDropdown({ title, children, classValue }: Props) {
 
   return (
     <div className="relative z-10">
-      <div>
-        <div
-          id="drop-btn"
-          onClick={() => isDropDown((prev) => !prev)}
-          className={`px-[10px] py-2 sm:px-3 sm:py-[14px] sm:w-[200px] sm:justify-between cursor-pointer border rounded-[10px] border-fontSecondary font-medium flex gap-8 items-center ${classValue}`}
-        >
-          {title}
-          <Image
-            id="arrow-btn"
-            src={arrDown}
-            alt="arrow down"
-            width={10}
-            className={`${dropDown ? "rotate-180" : "rotate-0"}`}
-          />
-        </div>
+      <div
+        id="drop-btn"
+        onClick={() => isDropDown((prev) => !prev)}
+        className={`cursor-pointer border rounded-[10px] border-fontSecondary font-medium flex gap-8 ${classValue}`}
+      >
+        {title}
+        <Image
+          id="arrow-btn"
+          src={arrDown}
+          alt="arrow down"
+          width={10}
+          className={`${dropDown ? "rotate-180" : "rotate-0"}`}
+        />
       </div>
 
       {/* dropdown container */}

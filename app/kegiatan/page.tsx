@@ -8,13 +8,13 @@ export const metadata = {
 
 export default function page() {
   return (
-    <section className="mt-24 md:mt-32 w-full md:w-[75%] m-auto">
+    <section className="mt-24 max-sm:mt-40 md:mt-32 w-full md:w-[75%] m-auto">
       <div>
         <div className="text-fontPrimary m-auto mx-6 sm:mx-16 sm:justify-between md:justify-start flex md:gap-[32px] items-center">
           <h1 className="hidden sm:text-h2 font-bold ">Event</h1>
           <SearchBar />
 
-          <FilterDropdown classValue="h-[]" title={"Kesenian"}>
+          <FilterDropdown classValue="sm:py-[7px] py-[4px] px-3 sm:text-h6 text-h7" title={"Kesenian"}>
             <FilterButton>Button 1</FilterButton>
             <FilterButton>Button 2</FilterButton>
             <FilterButton>Button 3</FilterButton>
