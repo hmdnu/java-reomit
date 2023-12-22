@@ -32,7 +32,7 @@ export default function Page({ params }: { params: { slug: string } }) {
     <main className="mt-24">
       {categories.map((category, i) => (
         <div key={i}>
-          <Image src={nasiGoreng} alt="leak" className="w-full h-[400px] object-cover" />
+          <Image src={category?.img} alt="leak" className="w-full h-[400px] object-cover" />
           <div className="w-[68%] m-auto my-[60px]">
             <h1 className="text-h2 font-bold">{category?.title}</h1>
             <div className="flex gap-3 mt-8">
