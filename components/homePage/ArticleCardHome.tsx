@@ -1,5 +1,4 @@
 import { articleCards } from "@/constant";
-import { carousel2 } from "@/public";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -13,7 +12,7 @@ export default function ArticleCardHome() {
 
       {/* article card container */}
       <div className="w-full md:w-[80%] m-auto mt-[60px] grid md:grid-cols-3 sm:grid-cols-2 place-items-center gap-[60px]">
-        {articleCards.map((article, i) => (
+        {articleCards.slice(0, 3).map((article, i) => (
           <Link
             href={"/artikel/" + article.title}
             key={i}
@@ -30,11 +29,7 @@ export default function ArticleCardHome() {
                   <h1>{article.date}</h1>
                 </div>
 
-                <h1 className="font-medium text-h7 md:text-h6 text-themeRed">
-                  {article.tag?.map((tag, i) => (
-                    <p key={i}>{tag}</p>
-                  ))}
-                </h1>
+                <h1 className="font-medium text-h7 md:text-h6 text-themeRed">{article.category}</h1>
               </div>
             </div>
           </Link>

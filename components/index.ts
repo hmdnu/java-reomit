@@ -38,4 +38,6 @@ export {
   Nav,
   QuoteHomepage,
   SearchBar,
+  SignInCard,
+  Stats,
 };
