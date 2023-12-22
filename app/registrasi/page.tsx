@@ -6,7 +6,7 @@ export const metadata = {
 
 export default function Page() {
   return (
-    <main className="sm:mx-10 md:main-layout">
+    <main className="flex m-auto md:main-layout">
       <SignInCard />
     </main>
   );

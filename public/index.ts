@@ -69,3 +69,5 @@
 //   iconLaunch,
 //   iconDownload,
 // };
+import reog1 from "@/public/images/reog.jpeg";
+export { reog1 };
