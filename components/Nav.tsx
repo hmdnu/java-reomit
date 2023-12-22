@@ -4,7 +4,7 @@ import { hamburger } from "@/public";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 import { SearchBar } from ".";
 import { FilterButton, FilterDropdown } from "./FilterDropdown";
 
