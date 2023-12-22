@@ -4,7 +4,7 @@ import { hamburger } from "@/public";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { SearchBar } from ".";
 import { FilterButton, FilterDropdown } from "./FilterDropdown";
 
@@ -13,7 +13,7 @@ export default function Nav() {
   const [navBg, setNavBg] = useState(true);
   const [searchBarNav, setSearchBarNav] = useState(false);
   const [filterMobile, setFilterMobile] = useState(false);
-  const [mobileView, setMobileView] = useState(false);
+  const [navMobileView, setNavMobileView] = useState(false);
 
   const pathname = usePathname();
   const path = pathname.split("/");
@@ -54,6 +54,11 @@ export default function Nav() {
     window.addEventListener("scroll", handleScrollNavChange);
   }, []);
 
+  function handleOpenNavMobile() {
+    setNavMobileView((prev) => !prev);
+    document.querySelector("body")?.classList.add("overflow-hidden");
+  }
+
   return (
     <nav
       className={`w-full py-[30px] fixed top-0 left-0 z-[9999] ${
@@ -79,25 +84,25 @@ export default function Nav() {
         </div>
 
         {/* hamburger menu */}
-        <div className="sm:hidden flex relative">
-          <Image
-            onClick={() => setMobileView((prev) => !prev)}
-            src={hamburger}
-            alt="hamburger"
-            width={20}
-            className="cursor-pointer"
-          />
-
-          {/* nav link mobile responsive */}
-          <div className="gap-[30px] hidden">
-            {navLinks.map((link, i) => (
-              <div key={i}>
-                <Link className="text-h5 font-medium" href={link.link}>
-                  {link.name}
-                </Link>
+        <div className="sm:hidden flex">
+          <Image onClick={handleOpenNavMobile} src={hamburger} alt="hamburger" width={20} className="cursor-pointer" />
+          {navMobileView && (
+            <div
+              id="navMobile"
+              onClick={() => setNavMobileView((prev) => !prev)}
+              className="bg-[rgba(0,0,0,.5)] w-full h-screen fixed z-50 top-0 left-0 overflow-hidden"
+            >
+              <div className="gap-[30px] absolute bg-white p-3 w-[150px] right-5 top-16 rounded-lg ">
+                {navLinks.map((link, i) => (
+                  <div key={i} className="mb-2 text-center">
+                    <Link href={link.link} className="sm:text-h5 text-h6 font-medium">
+                      {link.name}
+                    </Link>
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
+            </div>
+          )}
         </div>
       </div>
 
