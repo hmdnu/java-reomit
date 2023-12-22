@@ -19,51 +19,34 @@
 //   tariRemo,
 // } from "@/public";
 
-import { quote, quoteImg, kesenian, kuliner, tradisi, jaranKepang, kasada, tariRemo } from "@/public/images/beranda";
 import { profile1, profile2, profile3 } from "@/public/images/artikel";
 import {
-  kedukBeji,
-  pecelTumpangKediri,
+  banner1,
+  banner2,
+  banner3,
+  jaranKepang,
+  kasada,
+  kesenian,
+  kuliner,
+  tariRemo,
+  tradisi,
+} from "@/public/images/beranda";
+import {
   karapanSapi,
-  ludruk,
-  reog,
+  keboan,
+  kedukBeji,
+  larungSembonyo,
   lontongBalap,
+  ludruk,
   rawon,
+  reog,
   rujak,
   soto,
-  keboan,
-  larungSembonyo,
 } from "@/public/images/budaya";
 
-import {
-  bujangGanong,
-  gulatOkol,
-  jaranBodhag,
-  jaranJenggo,
-  jaranPegon,
-  tariAmbarang,
-  tariBeskalan,
-  tariGandrung,
-  tariBruto,
-  tariKuda,
-  tariKuntulan,
-  tariMuang,
-  ayamLodho,
-  bakso,
-  bebek,
-  brem,
-  gethuk,
-  krengseng,
-  sate,
-  tahuCampur,
-  tahuTek,
-  manten,
-  nyadran,
-  undukan,
-  yadyna,
-} from "@/public/images/galeri";
+import { tariGandrung } from "@/public/images/galeri";
 
-import { carousel1, nasiGoreng } from "@/public/images";
+import { carousel1 } from "@/public/images";
 
 import {
   ArticleCardTypes,
@@ -100,16 +83,13 @@ export const navLinks = [
 
 export const carouselHome: CarouselHome[] = [
   {
-    name: "bg-carousel1",
-    heading: "Ini Heading Tolong Jangan Hujat Saya Karena Tulisan “Saksikan” yang Sebelumnya",
-    paragraph:
-      "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+    img: banner1,
   },
   {
-    name: "bg-carousel2",
-    heading: "Ini Heading Tolong Jangan Hujat Saya Karena Tulisan “Saksikan” yang Sebelumnya",
-    paragraph:
-      "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+    img: banner2,
+  },
+  {
+    img: banner3,
   },
 ];
 

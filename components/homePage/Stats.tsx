@@ -5,7 +5,7 @@ import CountUp from "react-countup";
 export default function Stats() {
   return (
     <section>
-      <div className="flex w-full">
+      <div className="flex w-full sm:mt-48 md:mt-0">
         {stats.map((stat, i) => (
           <div className="w-[200px] sm:w-full text-white" key={i}>
             <div className={`${i % 2 == 0 ? "bg-themeGray" : "bg-themeRed"} p-[20px] sm:p-[48px] w-full`}>
