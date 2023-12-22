@@ -1,7 +1,9 @@
 import Footer from "./Footer";
 import Nav from "./Nav";
+import SearchBar from "./SearchBar";
 import ArticleCard from "./artikelPage/ArticleCard";
 import ArticleContent from "./artikelPage/ArticleContent";
+import BudayaCategory from "./daftarBudayaPage/BudayaCategory";
 import DaftarKesenian from "./daftarBudayaPage/categoryBudaya/DaftarKesenian";
 import DaftarKuliner from "./daftarBudayaPage/categoryBudaya/DaftarKuliner";
 import DaftarTradisi from "./daftarBudayaPage/categoryBudaya/DaftarTradisi";
@@ -10,17 +12,18 @@ import ArticleCardHome from "./homePage/ArticleCardHome";
 import CarouselHome from "./homePage/CarouselHome";
 import CategoryCulture from "./homePage/CategoryCulture";
 import QuoteHomepage from "./homePage/QuoteHomepage";
+import AsideEventDetail from "./kegiatanPage/AsideEventDetail";
 import EventCard from "./kegiatanPage/EventCard";
 import EventDetailSeeMore from "./kegiatanPage/EventDetailSeeMore";
 import EventDetailShedule from "./kegiatanPage/EventDetailShedule";
-import AsideEventDetail from "./kegiatanPage/AsideEventDetail";
-import SearchBar from "./SearchBar";
-import BudayaCategory from "./daftarBudayaPage/BudayaCategory";
+import SignInCard from "./registrasiPage/SignInCard";
 
 export {
   ArticleCard,
   ArticleCardHome,
   ArticleContent,
+  AsideEventDetail,
+  BudayaCategory,
   CarouselHome,
   CategoryCulture,
   DaftarKesenian,
@@ -32,8 +35,7 @@ export {
   Footer,
   Gallery,
   Nav,
-  AsideEventDetail,
   QuoteHomepage,
   SearchBar,
-  BudayaCategory,
+  SignInCard,
 };

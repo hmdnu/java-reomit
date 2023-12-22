@@ -1,5 +1,6 @@
 import { iconIg, iconLink, iconWa } from "@/public";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function AsideEventDetail() {
   return (
@@ -13,9 +14,11 @@ export default function AsideEventDetail() {
         </div>
       </div>
       <div className="flex flex-col-reverse md:flex md:flex-col w-[300px] md:w-[full]">
-        <button className="bg-themeRed text-h6 md:text-h5 text-white px-16 py-4 mt-[46px] rounded-[8px] font-medium">
-          Tiket
-        </button>
+        <Link href={"/registrasi"}>
+          <button className="bg-themeRed text-h6 md:text-h5 text-white px-16 py-4 mt-[46px] rounded-[8px] font-medium">
+            Tiket
+          </button>
+        </Link>
         <div className="mt-[39px] border-y w-[300px] md:w-full border-[#C0C0C0] py-[25px]">
           <h1 className="font-bold text-h6 md:text-h4 text-fontPrimary mb-[15px]">RSVP</h1>
           <div className="flex items-center gap-5 justify-between md:justify-evenly">
