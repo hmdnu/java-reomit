@@ -68,15 +68,15 @@ export const carouselHome: CarouselHome[] = [
 
 export const stats: Stats[] = [
   {
-    heading: "80+",
+    heading: "80",
     sub: "Situs Budaya",
   },
   {
-    heading: "80+",
+    heading: "80",
     sub: "Situs Budaya",
   },
   {
-    heading: "80+",
+    heading: "80",
     sub: "Situs Budaya",
   },
 ];
@@ -92,6 +92,7 @@ export const articleCards: ArticleCardTypes[] = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt placeat quod voluptates, laborum magni ipsum cupiditate aliquid totam aut optio incidunt expedita debitis libero, consequuntur eligendi odit adipisci dolorum officiis.",
     img: carousel1,
     imgAlt: "karapan-sapi",
+    tag: ["Kesenian"],
   },
   {
     imgAuthor: profile,
@@ -103,6 +104,7 @@ export const articleCards: ArticleCardTypes[] = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt placeat quod voluptates, laborum magni ipsum cupiditate aliquid totam aut optio incidunt expedita debitis libero, consequuntur eligendi odit adipisci dolorum officiis.",
     img: carousel2,
     imgAlt: "karapan-sapi",
+    tag: ["Tradisi"],
   },
 ];
 
@@ -143,29 +145,6 @@ export const categoryHome = [
   {
     img: "",
     heading: "Kuliner Otentik",
-  },
-];
-
-export const articleCardHome = [
-  {
-    title: "Sejarah Reog Ponorogo di Jatim",
-    creator: "John Doe",
-    dateCreated: "Agustus 2023",
-    tag: ["Kesenian"],
-  },
-
-  {
-    title: "Sejarah Reog Ponorogo di Jatim",
-    creator: "John Doe",
-    dateCreated: "Agustus 2023",
-    tag: ["Kesenian"],
-  },
-
-  {
-    title: "Sejarah Reog Ponorogo di Jatim",
-    creator: "John Doe",
-    dateCreated: "Agustus 2023",
-    tag: ["Kesenian"],
   },
 ];
 
@@ -410,44 +389,3 @@ export const gallery = {
     },
   ],
 };
-
-// export const gallery = [
-//   {
-//     kuliner: {
-//       img: [soto, rawon, lontongBalap, rujak],
-//       altImg: ["soto", "rawon", "lontongBalap", "rujak"],
-//       title: [
-//         "Harmoni Rasa Indonesia dalam Sebatang Mangkok Soto",
-//         "Hitamnya Rawon, Kelezatan Tradisi Jawa Timur",
-//         "Petualangan Rasa Lontong Balap Surabaya",
-//         "Rujak Segar dalam Goyangan Rasa yang Mencengangkan",
-//       ],
-//     },
-//   },
-//   {
-//     kesenian: {
-//       img: [jaranKepang, karapanSapi, ludruk, reog, tariGandrung, tariRemo],
-//       altImg: ["jaranKepang", "karapanSapi", "ludruk", "reog", "tariGandrung", "tariRemo"],
-//       title: [
-//         "Pesona Jaran Kepang dalam Seni Rakyat",
-//         "Exploring the Tradition of Karapan Sapi",
-//         "Ludruk, Perpaduan Komedi dan Kearifan Lokal Jawa Timur ",
-//         "Pesona Mistis dan Kecantikan Reog Ponorogo",
-//         "Keindahan Tari Gandrung yang Mengharukan",
-//         "KesenianPesona dan Makna Tari Remo",
-//       ],
-//     },
-//   },
-//   {
-//     tradisi: {
-//       img: [kasada, keboan, kedukBeji, larungSembonyo],
-//       altImg: ["kasada", "keboan", "kedukBeji", "larungSembonyo"],
-//       title: [
-//         "Keharmonisan Spiritual dalam Tradisi Tengger",
-//         "Tradisi Kebo-keboan dalam Budaya Khas Banyuwangi",
-//         "Ritual Kesucian Air yang Memperkaya Kebudayaan Jawa",
-//         "Perwujudan Rasa Syukur Nelayan dengan Tradisi Larung Sembonyo",
-//       ],
-//     },
-//   },
-// ];

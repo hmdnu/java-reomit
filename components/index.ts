@@ -16,6 +16,7 @@ import EventDetailShedule from "./kegiatanPage/EventDetailShedule";
 import AsideEventDetail from "./kegiatanPage/AsideEventDetail";
 import SearchBar from "./SearchBar";
 import BudayaCategory from "./daftarBudayaPage/BudayaCategory";
+import Stats from "./homePage/Stats";
 
 export {
   ArticleCard,
@@ -36,4 +37,5 @@ export {
   QuoteHomepage,
   SearchBar,
   BudayaCategory,
+  Stats,
 };
