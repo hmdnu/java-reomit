@@ -1,5 +1,5 @@
 "use client";
-import { clock, location } from "@/public";
+import { iconClock, iconLocation } from "@/public/icons";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { EventCardTypes } from "@/types";
@@ -17,7 +17,7 @@ export default function EventCard({ key, event }: { key: number; event: EventCar
       <div className="py-7 px-5 flex flex-col gap-[5px] justify-center">
         <h1 className="text-h6 font-bold text-white">{event.title}</h1>
         <div className="flex gap-[10px]">
-          <Image src={clock} alt="clock" width={14} />
+          <Image src={iconClock} alt="clock" width={14} />
           <div className="text-fontGray text-h7 font-medium flex gap-3">
             <h1>{event.date}</h1>
             <span>|</span>
@@ -25,7 +25,7 @@ export default function EventCard({ key, event }: { key: number; event: EventCar
           </div>
         </div>
         <div className="text-fontGray text-h7 font-medium flex gap-3 items-start">
-          <Image src={location} width={12} alt="location" className="mt-[3px]" />
+          <Image src={iconLocation} width={12} alt="location" className="mt-[3px]" />
           <p>{event.location}</p>
         </div>
       </div>

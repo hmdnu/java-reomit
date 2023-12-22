@@ -19,11 +19,51 @@
 //   tariRemo,
 // } from "@/public";
 
-import { jaranKepang, kasada, profile1, profile2, profile3, tariRemo } from "@/public/images/artikel";
+import { quote, quoteImg, kesenian, kuliner, tradisi, jaranKepang, kasada, tariRemo } from "@/public/images/beranda";
+import { profile1, profile2, profile3 } from "@/public/images/artikel";
+import {
+  kedukBeji,
+  pecelTumpangKediri,
+  karapanSapi,
+  ludruk,
+  reog,
+  lontongBalap,
+  rawon,
+  rujak,
+  soto,
+  keboan,
+  larungSembonyo,
+} from "@/public/images/budaya";
 
-import { kesenian, kuliner, tradisi } from "@/public/images/beranda";
+import {
+  bujangGanong,
+  gulatOkol,
+  jaranBodhag,
+  jaranJenggo,
+  jaranPegon,
+  tariAmbarang,
+  tariBeskalan,
+  tariGandrung,
+  tariBruto,
+  tariKuda,
+  tariKuntulan,
+  tariMuang,
+  ayamLodho,
+  bakso,
+  bebek,
+  brem,
+  gethuk,
+  krengseng,
+  sate,
+  tahuCampur,
+  tahuTek,
+  manten,
+  nyadran,
+  undukan,
+  yadyna,
+} from "@/public/images/galeri";
 
-import { reog } from "@/public";
+import { carousel1, nasiGoreng } from "@/public/images";
 
 import {
   ArticleCardTypes,
@@ -126,25 +166,25 @@ export const articleCards: ArticleCardTypes[] = [
 
 export const articleDetail: ArticleDetail[] = [
   {
-    imgAuthor: profile,
+    imgAuthor: profile1,
     author: "John Doe",
     date: "• Agustus 2023",
     category: "Kesenian",
     title: "Sejarah Pertunjukan Reog Ponorogo dikalangan Masyarakat Jawa Timur",
     content:
       "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est. ",
-    img: carousel1,
+    img: reog,
     imgAlt: "reog",
   },
   {
-    imgAuthor: profile,
+    imgAuthor: profile2,
     author: "Lavina",
     date: "• september 2023",
     category: "Kesenian",
     title: "Daya Tarik Kesenian Bantengan Terhadap Masyarakat di Berbagai Kalangan Usia",
     content:
       "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est. ",
-    img: carousel2,
+    img: karapanSapi,
     imgAlt: "karapan-sapi",
   },
 ];
@@ -170,42 +210,42 @@ export const eventCard: EventCardTypes[] = [
     date: "10 Des 2023",
     time: "09.00 WIB",
     location: "Gedung Graha Cakrawala, Universitas Negeri Malang, Sumbersari, Kec. Lowokwaru",
-    imgPath: carousel3,
+    imgPath: carousel1,
   },
   {
     title: "Festival Budaya Nusantara (FBN) VI Tahun 2023",
     date: "10 Des 2023",
     time: "09.00 WIB",
     location: "Gedung Graha Cakrawala, Universitas Negeri Malang, Sumbersari, Kec. Lowokwaru",
-    imgPath: carousel3,
+    imgPath: carousel1,
   },
   {
     title: "Festival Budaya Nusantara (FBN) VI Tahun 2023",
     date: "10 Des 2023",
     time: "09.00 WIB",
     location: "Gedung Graha Cakrawala, Universitas Negeri Malang, Sumbersari, Kec. Lowokwaru",
-    imgPath: carousel3,
+    imgPath: carousel1,
   },
   {
     title: "Festival Budaya Nusantara (FBN) VI Tahun 2023",
     date: "10 Des 2023",
     time: "09.00 WIB",
     location: "Gedung Graha Cakrawala, Universitas Negeri Malang, Sumbersari, Kec. Lowokwaru",
-    imgPath: carousel3,
+    imgPath: carousel1,
   },
   {
     title: "Festival Budaya Nusantara (FBN) VI Tahun 2023",
     date: "10 Des 2023",
     time: "09.00 WIB",
     location: "Gedung Graha Cakrawala, Universitas Negeri Malang, Sumbersari, Kec. Lowokwaru",
-    imgPath: carousel3,
+    imgPath: carousel1,
   },
   {
     title: "Festival Budaya Nusantara (FBN) VI Tahun 2023",
     date: "10 Des 2023",
     time: "09.00 WIB",
     location: "Gedung Graha Cakrawala, Universitas Negeri Malang, Sumbersari, Kec. Lowokwaru",
-    imgPath: carousel3,
+    imgPath: carousel1,
   },
 ];
 

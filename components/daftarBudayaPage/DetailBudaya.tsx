@@ -1,4 +1,5 @@
-import { carousel1, profile } from "@/public";
+import { carousel1 } from "@/public/images";
+import { profile1 } from "@/public/images/artikel";
 import Image from "next/image";
 
 export default function DetailBudaya() {
@@ -8,7 +9,7 @@ export default function DetailBudaya() {
       <div className="w-[68%] m-auto my-[60px]">
         <h1 className="text-h2 font-bold">Pesona Mistis dan Kecantikan Reog Ponorogo</h1>
         <div className="flex gap-3 mt-8">
-          <Image src={profile} width={40} height={40} alt="profile"></Image>
+          <Image src={profile1} width={40} height={40} alt="profile" />
           <div>
             <div className="flex gap-1">
               <h3 className="text-h6 font-semibold">John Doe</h3>

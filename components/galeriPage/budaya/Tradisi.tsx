@@ -1,5 +1,5 @@
 import { gallery } from "@/constant";
-import { iconLaunch } from "@/public";
+import { iconLaunch } from "@/public/icons";
 import Link from "next/link";
 import Image from "next/image";
 

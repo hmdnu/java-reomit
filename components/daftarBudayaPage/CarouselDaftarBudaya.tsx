@@ -1,5 +1,5 @@
 "use client";
-import { carousel1, carousel3 } from "@/public";
+import { carousel1 } from "@/public/images";
 import Image from "next/image";
 import Carousel from "react-multi-carousel";
 
@@ -23,7 +23,7 @@ export default function CarouselDaftarBudaya() {
     },
   };
 
-  const image = [carousel1, carousel3];
+  const image = [carousel1, carousel1];
 
   return (
     <Carousel

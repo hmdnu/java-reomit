@@ -12,6 +12,7 @@ import kasada from "./tradisi/kasada.jpg";
 import keboan from "./tradisi/keboan.jpeg";
 import kedukBeji from "./tradisi/keduk-beji.jpeg";
 import larungSembonyo from "./tradisi/larung-sembonyo.webp";
+import pecelTumpangKediri from "./carousel/PECEL-TUMPANG-KEDIRI.png";
 
 export {
   jaranKepang,
@@ -26,4 +27,5 @@ export {
   reog,
   rujak,
   soto,
+  pecelTumpangKediri,
 };

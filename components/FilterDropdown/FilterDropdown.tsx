@@ -1,5 +1,5 @@
 "use client";
-import { arrDown } from "@/public";
+import { iconArowDown } from "@/public/icons";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
@@ -37,7 +37,7 @@ export default function FilterDropdown({ title, children, classValue }: Props) {
         {title}
         <Image
           id="arrow-btn"
-          src={arrDown}
+          src={iconArowDown}
           alt="arrow down"
           width={10}
           className={`${dropDown ? "rotate-180" : "rotate-0"}`}

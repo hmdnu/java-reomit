@@ -1,4 +1,4 @@
-import { reog } from "@/public";
+import { reog } from "@/public/images/budaya";
 import Image from "next/image";
 
 export default function SignInCard() {

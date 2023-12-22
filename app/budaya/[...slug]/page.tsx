@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { profile } from "@/public";
+import { profile1 } from "@/public/images/artikel";
 import { categoryBudaya } from "@/constant";
-import { nasiGoreng } from "@/public";
+import { nasiGoreng } from "@/public/images";
 
 interface Props {
   params: {
@@ -37,7 +37,7 @@ export default function Page({ params }: { params: { slug: string } }) {
             <h1 className="text-h2 font-bold">{category?.title}</h1>
             <div className="flex gap-3 mt-8">
               <Image
-                src={profile}
+                src={profile1}
                 width={40}
                 height={40}
                 alt="profile"
