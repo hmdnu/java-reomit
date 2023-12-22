@@ -59,6 +59,11 @@ export default function Nav() {
     document.querySelector("body")?.classList.add("overflow-hidden");
   }
 
+  function handleCloseNavMobile() {
+    setNavMobileView((prev) => !prev);
+    document.querySelector("body")?.classList.remove("overflow-hidden");
+  }
+
   return (
     <nav
       className={`w-full py-[30px] fixed top-0 left-0 z-[9999] ${
@@ -89,7 +94,7 @@ export default function Nav() {
           {navMobileView && (
             <div
               id="navMobile"
-              onClick={() => setNavMobileView((prev) => !prev)}
+              onClick={handleCloseNavMobile}
               className="bg-[rgba(0,0,0,.5)] w-full h-screen fixed z-50 top-0 left-0 overflow-hidden"
             >
               <div className="gap-[30px] absolute bg-white p-3 w-[150px] right-5 top-16 rounded-lg ">
