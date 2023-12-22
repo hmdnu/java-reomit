@@ -7,7 +7,7 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <main className="overflow-hidden">
+    <main className="w-full overflow-hidden">
       <CarouselHome />
       {/* stats */}
       <section>
@@ -15,8 +15,8 @@ export default function Home() {
           {stats.map((stat, i) => (
             <div className="w-[200px] sm:w-full text-white" key={i}>
               <div className={`${i % 2 == 0 ? "bg-themeGray" : "bg-themeRed"} p-[20px] sm:p-[48px] w-full`}>
-                <h1 className="text-h2 md:text-h1 font-bold mb-1">{stat.heading}</h1>
-                <h2 className="text-h7 md:text-h4 font-bold">{stat.sub}</h2>
+                <h1 className="text-h2 sm:text-h1 font-bold mb-1">{stat.heading}</h1>
+                <h2 className="text-h7 sm:text-h4 font-bold">{stat.sub}</h2>
               </div>
             </div>
           ))}
