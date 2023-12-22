@@ -1,7 +1,7 @@
 import React from "react";
 import { gallery } from "@/constant";
 import Image, { StaticImageData } from "next/image";
-import { iconDownload } from "@/public";
+import { iconDownload } from "@/public/icons";
 import { RecomendCategory } from "@/components/galeriPage/budaya";
 
 interface imgProps {

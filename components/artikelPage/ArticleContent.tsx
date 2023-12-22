@@ -4,6 +4,7 @@ import Image from "next/image";
 
 export default function ArticleContent({ articleTitle }: { articleTitle: string }) {
   const articles = articleDetail.filter((article) => article.title === articleTitle);
+  console.log(articleTitle);
 
   return (
     <div>

@@ -1,6 +1,6 @@
 "use client";
 import { navLinks } from "@/constant";
-import { hamburger } from "@/public";
+import { iconHamburger } from "@/public/icons";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -90,7 +90,13 @@ export default function Nav() {
 
         {/* hamburger menu */}
         <div className="sm:hidden flex">
-          <Image onClick={handleOpenNavMobile} src={hamburger} alt="hamburger" width={20} className="cursor-pointer" />
+          <Image
+            onClick={handleOpenNavMobile}
+            src={iconHamburger}
+            alt="hamburger"
+            width={20}
+            className="cursor-pointer"
+          />
           {navMobileView && (
             <div
               id="navMobile"

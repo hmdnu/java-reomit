@@ -1,5 +1,5 @@
 import { navLinks } from "@/constant";
-import { iconIg, iconWa, iconYt } from "@/public";
+import { iconIg, iconWa, iconYt } from "@/public/icons";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -13,9 +13,9 @@ export default function Footer() {
           </h1>
           <p className="font-medium text-fontPrimary md:text-h6 text-h8">© All Rights Reserved. Java Reomit 2023</p>
         </div>
-        <div className="sm:grid sm:grid-cols-2 md:flex hidden justify-between sm:gap-1 md:gap-[50px]">
+        <div className="md:flex hidden gap-8">
           {navLinks.map((link, i) => (
-            <Link key={i} className="text-h5 font-medium sm:mx-5" href={link.link}>
+            <Link key={i} className="text-h5 font-medium" href={link.link}>
               {link.name}
             </Link>
           ))}

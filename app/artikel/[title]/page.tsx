@@ -7,7 +7,7 @@ interface props {
 }
 
 export function generateMetadata({ params }: props) {
-  const title = params.title.split("%20").join(" ");
+  const title = decodeURIComponent(params.title);
 
   return {
     title,
@@ -15,7 +15,7 @@ export function generateMetadata({ params }: props) {
 }
 
 export default function Page({ params }: { params: { title: string } }) {
-  const articleTitle = params.title.split("%20").join(" ");
+  const articleTitle = decodeURIComponent(params.title);
   return (
     <main className="mt-24">
       <ArticleContent articleTitle={articleTitle} />

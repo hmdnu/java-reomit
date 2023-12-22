@@ -1,6 +1,6 @@
 import { AsideEventDetail, EventDetailSeeMore, EventDetailShedule } from "@/components";
 import { eventCardDetail } from "@/constant";
-import { iconIg, iconLink, iconWa } from "@/public";
+import { iconIg, iconLink, iconWa } from "@/public/icons";
 import Image from "next/image";
 
 interface props {
@@ -25,7 +25,7 @@ export default function page({ params }: { params: { title: string } }) {
   return (
     <section className="w-[80%] mt-[100px] m-auto">
       <div
-        className={`bg-carousel3 rounded-[20px] bg-center w-full h-[300px] md:h-[478px] bg-cover bg-no-repeat relative`}
+        className={`bg-carousel1 rounded-[20px] bg-center w-full h-[300px] md:h-[478px] bg-cover bg-no-repeat relative`}
       >
         <h1 className="bg-white text-fontPrimary w-fit px-6 py-2 font-bold text-h7 md:text-h6 bottom-[30px] left-[34px] absolute rounded-[8px]">
           {event?.isGratis ? "Gratis" : "Berbayar"}
