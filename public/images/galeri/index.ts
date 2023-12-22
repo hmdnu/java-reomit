@@ -22,6 +22,7 @@ import brem from "./kuliner/BREM-MADIUN.jpeg";
 import gethuk from "./kuliner/GETHUK-PISANG-KEDIRI.jpeg";
 import krengseng from "./kuliner/KRENGSENGAN-DAGING-SAPI-SURABAYA.jpeg";
 import lontongBalap from "./kuliner/LONTONG-BALAP-SURABAYA.jpeg";
+import pecelTumpang from "./kuliner/PECEL-TUMPANG-MADIUN.jpeg";
 import rujak from "./kuliner/RUJAK-CINGUR-SURABAYA.jpeg";
 import sate from "./kuliner/SATE-AYAM-MADURA.jpeg";
 import soto from "./kuliner/SOTO-LAMONGAN.jpeg";
@@ -57,6 +58,7 @@ export {
   ludruk,
   manten,
   nyadran,
+  pecelTumpang,
   reog,
   rujak,
   sate,
