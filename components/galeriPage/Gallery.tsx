@@ -1,8 +1,8 @@
 "use client";
 import { useState } from "react";
-import Kesenian from "./Kesenian";
-import Kuliner from "./Kuliner";
-import Tradisi from "./Tradisi";
+import Kesenian from "./budaya/Kesenian";
+import Kuliner from "./budaya/Kuliner";
+import Tradisi from "./budaya/Tradisi";
 
 export default function Gallery() {
   const MenuGallery = () => {

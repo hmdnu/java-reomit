@@ -344,76 +344,72 @@ export const categoryBudaya: CategoryBudayaTypes = {
   ],
 };
 
-export const gallery = [
-  {
-    kuliner: [
-      {
-        img: soto,
-        altImg: "soto",
-      },
-      {
-        img: rawon,
-        altImg: "rawon",
-      },
-      {
-        img: lontongBalap,
-        altImg: "lontongBalap",
-      },
-      {
-        img: rujak,
-        altImg: "rujak",
-      },
-    ],
-  },
-  {
-    kesenian: [
-      {
-        img: jaranKepang,
-        altImg: "Jaran Kepang",
-      },
-      {
-        img: karapanSapi,
-        altImg: "Karapan Sapo",
-      },
-      {
-        img: ludruk,
-        altImg: "Ludruk",
-      },
-      {
-        img: reog,
-        altImg: "Reog",
-      },
-      {
-        img: tariGandrung,
-        altImg: "Tari Gandrung",
-      },
-      {
-        img: tariRemo,
-        altImg: "Tari Remo",
-      },
-    ],
-  },
-  {
-    tradisi: [
-      {
-        img: kasada,
-        altImg: "kasada",
-      },
-      {
-        img: keboan,
-        altImg: "keboan",
-      },
-      {
-        img: kedukBeji,
-        altImg: "Keduk Beji",
-      },
-      {
-        img: larungSembonyo,
-        altImg: "Larung Sembonyo",
-      },
-    ],
-  },
-];
+export const gallery = {
+  kuliner: [
+    {
+      img: soto,
+      altImg: "soto",
+    },
+    {
+      img: rawon,
+      altImg: "rawon",
+    },
+    {
+      img: lontongBalap,
+      altImg: "lontongBalap",
+    },
+    {
+      img: rujak,
+      altImg: "rujak",
+    },
+  ],
+
+  kesenian: [
+    {
+      img: jaranKepang,
+      altImg: "JaranKepang",
+    },
+    {
+      img: karapanSapi,
+      altImg: "KarapanSapo",
+    },
+    {
+      img: ludruk,
+      altImg: "Ludruk",
+    },
+    {
+      img: reog,
+      altImg: "Reog",
+    },
+    {
+      img: tariGandrung,
+      altImg: "TariGandrung",
+    },
+    {
+      img: tariRemo,
+      altImg: "TariRemo",
+    },
+  ],
+
+  tradisi: [
+    {
+      img: kasada,
+      altImg: "kasada",
+    },
+    {
+      img: keboan,
+      altImg: "keboan",
+    },
+    {
+      img: kedukBeji,
+      altImg: "KedukBeji",
+    },
+    {
+      img: larungSembonyo,
+      altImg: "LarungSembonyo",
+    },
+  ],
+};
 
 // export const gallery = [
 //   {

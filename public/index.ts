@@ -34,6 +34,8 @@ import search from "./icons/search.svg";
 import nasiGoreng from "./images/nasi-goreng.jpg";
 import iconLaunch from "./icons/launch.svg";
 
+import iconDownload from "./icons/download.svg";
+
 export {
   carousel1,
   carousel2,
@@ -65,4 +67,5 @@ export {
   search,
   nasiGoreng,
   iconLaunch,
+  iconDownload,
 };

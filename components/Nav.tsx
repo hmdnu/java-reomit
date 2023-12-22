@@ -16,6 +16,8 @@ export default function Nav() {
   const [mobileView, setMobileView] = useState(false);
 
   const pathname = usePathname();
+  const path = pathname.split("/");
+  const budaya = path[path.length - 1];
 
   function handleScrollNavChange() {
     const scroll = document.documentElement.scrollTop;
@@ -46,7 +48,7 @@ export default function Nav() {
     } else {
       setFilterMobile(false);
     }
-  }, [pathname]);
+  }, [pathname, budaya]);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScrollNavChange);
