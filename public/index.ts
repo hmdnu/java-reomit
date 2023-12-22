@@ -32,6 +32,9 @@ import larungSembonyo from "./images/larung-sembonyo.webp";
 import hamburger from "./icons/hamburger.svg";
 import search from "./icons/search.svg";
 import nasiGoreng from "./images/nasi-goreng.jpg";
+import iconLaunch from "./icons/launch.svg";
+
+import iconDownload from "./icons/download.svg";
 
 export {
   carousel1,
@@ -63,4 +66,6 @@ export {
   hamburger,
   search,
   nasiGoreng,
+  iconLaunch,
+  iconDownload,
 };
