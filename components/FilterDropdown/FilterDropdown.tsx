@@ -33,7 +33,7 @@ export default function FilterDropdown({ title, children, classValue }: Props) {
         <div
           id="drop-btn"
           onClick={() => isDropDown((prev) => !prev)}
-          className={`cursor-pointer border rounded-[10px] border-fontSecondary font-medium flex gap-8 items-center ${classValue}`}
+          className={`px-[10px] py-2 sm:px-3 sm:py-[14px] sm:w-[200px] sm:justify-between cursor-pointer border rounded-[10px] border-fontSecondary font-medium flex gap-8 items-center ${classValue}`}
         >
           {title}
           <Image

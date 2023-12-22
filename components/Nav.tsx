@@ -6,7 +6,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { SearchBar } from ".";
-import { FilterButton, FilterDropdown } from "./FilterDropdown";
 
 export default function Nav() {
   const [view, setView] = useState(false);
@@ -99,7 +98,7 @@ export default function Nav() {
         </div>
       </div>
 
-      <div className="sm:hidden flex items-center m-auto w-[90%] mt-[20px] gap-5 ">
+      {/* <div className="hidden sm:flex items-center m-auto w-[90%] mt-[20px] gap-5 ">
         {searchBarNav ? <SearchBar /> : null}
         {filterMobile ? (
           <FilterDropdown classValue="text-h7 rounded-[5px] h-[27px] px-4" title={"Kesenian"}>
@@ -108,7 +107,7 @@ export default function Nav() {
             <FilterButton classValue="text-h7">Button 3</FilterButton>
           </FilterDropdown>
         ) : null}
-      </div>
+      </div> */}
     </nav>
   );
 }
